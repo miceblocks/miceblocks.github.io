@@ -1,0 +1,117 @@
+/*Universal*/
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+/*Header*/
+header {
+    background: #e0bf00;
+    /*padding: 25px;*/
+    text-align: center;
+    /*margin-bottom: 25px;*/
+}
+img.mice-text {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*Menu*/
+.nav-buttons {
+    background: #000000;
+    padding: 20px;
+}
+.nav-buttons a {
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.nav-buttons a:hover {
+    transition: .2s ease;
+    border: 1px solid #ffe970;
+    color: #ffe970
+}
+
+/*
+img#redstone-logo {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+*/
+
+/*Carousel*/
+.carousel-images {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+    background: black;
+    /*background: url("../imgs/image1.jpg") center center/100% 100% no-repeat;*/
+}
+.carousel-image-1 {
+    display:block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    
+}
+
+/*Main Info*/
+div.faq-div {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /*color: white;
+    background-color: #5d0081;
+    padding: 40px;*/
+    text-align: center;
+}
+
+div.faq-div h1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    font-size: 180%;
+    border-bottom: black solid 1px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+div.faq-div h2 {
+    font-size: 110%;
+}
+
+div.faq-div p {
+    margin-bottom: 25px;
+    
+}
+
+/*Footer Area*/
+footer {
+    color: white;
+    padding: 20px;
+    margin-top: 25px;
+    text-align: center;
+    background: #2b003b;
+}
+footer p {
+    font-weight: bold;
+    font-size: 110%;
+}
+
