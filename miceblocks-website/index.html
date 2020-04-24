@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,24 +16,80 @@
     -->
     <title>MiceBlocks</title>
 </head>
+
 <body>
-    <header>
-        <img class="mice-text" src="imgs/mice-text.png" alt="Vortex">
+    <header id="header-id">
+        <img class="mice-text" src="imgs/mice-text.png" alt="MiceBlocks">
         <!--
         <img id="redstone-logo" src="imgs/obsidian-block-render.png" alt="Vortex Redstone Block">
         -->
         <nav class="nav-buttons">
-            <a href="#">FAQ</a>
-            <a href="#">Download</a>
+            <a href="#faq-area-id">FAQ</a>
+            <a href="#download-area-id">Download</a>
             <a href="#">About</a>
         </nav>
     </header>
-    <section class="main-area">
+    <section id="carousel-area-id" class="carousel-area">
         <div class="carousel-images">
 
-                <img class="carousel-image-1" src="imgs/image1.jpg" alt="Vortex">
-            
+            <img class="carousel-image-1" src="imgs/background2-cut-header.jpg" alt="MiceBlock preview">
+
         </div>
+    </section>
+    <section id="download-area-id" class="download-area">
+        <div class="download-options">
+            <table class="download-options-table">
+                <tr>
+                    <td class="download-table-icon">
+                        <img class="download-icons" src="imgs/gold-block-render.png" alt="Gold Block, MiceBlock logo">
+                    </td>
+                    <td class="download-table-text">
+                        <p>
+                            MiceBlock Default
+                        </p>
+                    </td>
+                    <td class="download-table-download">
+                        <img id="download-button-image1" class="download-button-images"
+                            src="imgs/download-icon-gold.png" alt="Download Button" onmouseover="DownloadButtonOn(1)"
+                            onmouseout="DownloadButtonOff(1)">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="download-table-icon">
+                        <img class="download-icons" src="imgs/redstone-block-render.png"
+                            alt="Gold Block, MiceBlock logo">
+                    </td>
+                    <td class="download-table-text">
+                        <p>
+                            MiceBlock Option 2
+                        </p>
+                    </td>
+                    <td class="download-table-download">
+                        <img id="download-button-image2" class="download-button-images"
+                            src="imgs/download-icon-gold.png" alt="Download Button" onmouseover="DownloadButtonOn(2)"
+                            onmouseout="DownloadButtonOff(2)">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="download-table-icon">
+                        <img class="download-icons" src="imgs/obsidian-block-render.png"
+                            alt="Gold Block, MiceBlock logo">
+                    </td>
+                    <td class="download-table-text">
+                        <p>
+                            MiceBlock Option 3
+                        </p>
+                    </td>
+                    <td class="download-table-download">
+                        <img id="download-button-image3" class="download-button-images"
+                            src="imgs/download-icon-gold.png" alt="Download Button" onmouseover="DownloadButtonOn(3)"
+                            onmouseout="DownloadButtonOff(3)">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="faq-area-id" class="faq-area">
         <div class="faq-div">
             <h1>FAQ</h1>
             <h2>What is Mice Blocks?</h2>
@@ -49,6 +106,14 @@
                 The idea behind this project is practice my web design skills.
             </p>
 
+            <h2>Wait! This is just a copy of oCd Pack!</h2>
+            <br>
+            <p>
+                1° this is't a question.<br>
+                2° At the moment, a lot of the textures are placeholders... In the near future, I'll update the Texture
+                Pack with new and original textures.
+            </p>
+
             <!--<h2>What?</h2>
             <br>
             <p>
@@ -57,69 +122,11 @@
             -->
         </div>
     </section>
-    <section class="download-area">
-        <div class="download-options">
-            <table class="download-options-table">
-                <tr>
-                    <td class="download-table-icon">
-                        <img class="download-icons" src="imgs/gold-block-render.png" alt="Gold Block, MiceBlock logo">
-                    </td>
-                    <td class="download-table-text">
-                        <p>
-                            MiceBlock Default
-                        </p>
-                    </td>
-                    <td class="download-table-download">
-                        <img id="download-button-image1"
-                        class="download-button-images"
-                        src="imgs/download-icon-gold.png" 
-                        alt="Download Button" 
-                        onmouseover="DownloadButtonOn(1)" 
-                        onmouseout="DownloadButtonOff(1)">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="download-table-icon">
-                        <img class="download-icons" src="imgs/redstone-block-render.png" alt="Gold Block, MiceBlock logo">
-                    </td>
-                    <td class="download-table-text">
-                        <p>
-                            MiceBlock Option 2
-                        </p>
-                    </td>
-                    <td class="download-table-download">
-                        <img id="download-button-image2" 
-                        class="download-button-images"
-                        src="imgs/download-icon-gold.png" 
-                        alt="Download Button" 
-                        onmouseover="DownloadButtonOn(2)" 
-                        onmouseout="DownloadButtonOff(2)">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="download-table-icon">
-                        <img class="download-icons" src="imgs/obsidian-block-render.png" alt="Gold Block, MiceBlock logo">
-                    </td>
-                    <td class="download-table-text">
-                        <p>
-                            MiceBlock Option 3
-                        </p>
-                    </td>
-                    <td class="download-table-download">
-                        <img id="download-button-image3" 
-                        class="download-button-images"
-                        src="imgs/download-icon-gold.png" 
-                        alt="Download Button" 
-                        onmouseover="DownloadButtonOn(3)" 
-                        onmouseout="DownloadButtonOff(3)">
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </section>
     <footer>
         <p>MiceBlocks</p>
+        <a href="#header-id">Back to top</a>
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
