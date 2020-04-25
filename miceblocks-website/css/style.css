@@ -1,5 +1,4 @@
 /*Universal*/
-
 * {
     margin: 0%;
     padding: 0%;
@@ -13,6 +12,7 @@
 a {
     text-decoration: none;
 }
+
 /*Header*/
 header {
     background: #8aacff;
@@ -45,15 +45,6 @@ img.mice-text {
     color: #ffe970
 }
 
-/*
-img#redstone-logo {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-}
-*/
-
 /*Carousel*/
 .carousel-images {
     margin-left: auto;
@@ -71,7 +62,6 @@ img#redstone-logo {
     /*margin-bottom: 25px;*/
     
 }
-
 
 /*Download Area*/
 .download-area {
@@ -128,12 +118,13 @@ div.faq-div {
     /*color: white;
     background-color: #5d0081;
     padding: 40px;*/
-    text-align: center;
+    text-align: justify;
 }
 
 div.faq-div h1 {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     width: 70%;
     font-size: 180%;
     border-bottom: black solid 1px;
@@ -149,6 +140,36 @@ div.faq-div p {
     margin-bottom: 25px;
     
 }
+
+/*Chargelog Area*/
+.changelog-div {
+    text-align: center;
+}
+
+.changelog-div h1 {
+    font-size: 180%;
+}
+
+.changelog-div h2 {
+    font-size: 140%;
+}
+
+.changelog-div h3 {
+    font-size: 120%;
+}
+
+.changelog-block {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    width: 50%;
+    height: 400px;
+    overflow: auto;
+    text-align: justify;
+    padding: 40px;
+    /*border: 4px solid #ffe970;*/
+}
+
 
 /*Footer Area*/
 footer {
