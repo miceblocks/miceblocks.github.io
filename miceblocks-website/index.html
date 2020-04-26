@@ -18,74 +18,103 @@
 </head>
 
 <body>
+    <!-- Go to Top Button -->
+    <a href="#header-id">
+        <img id="top-arrow-id" class="top-arrow" src="imgs/arrow-top.png" alt="To Top Arrow" onclick="topFunction()">
+    </a>
+    <!-- Header -->
+
     <header id="header-id">
         <img class="mice-text" src="imgs/mice-text.png" alt="MiceBlocks">
         <nav class="nav-buttons">
-            <a href="#faq-area-id">FAQ</a>
-            <a href="#download-area-id">Download</a>
-            <a href="#">About</a>
+            <a href="#faq-area-id">
+                <img id="nav-id-info" 
+                class="nav-info" 
+                src="imgs/info-button-unselected.png" 
+                alt="Button to Info area" 
+                onmouseover="NavInfoOn('nav-id-info')"
+                onmouseout="NavInfoOff('nav-id-info')">
+            </a>
+            <a href="#download-area-id">
+                <img id="nav-id-download" 
+                class="nav-download" 
+                src="imgs/download-button-unselected.png" 
+                alt="Button to Download area" 
+                onmouseover="NavDownloadOn('nav-id-download')"
+                onmouseout="NavDownloadOff('nav-id-download')">
+            </a>
+            <a href="#changelog-area-id">
+                <img id="nav-id-changelog" 
+                class="nav-changelog" 
+                src="imgs/changelog-button-unselected.png" 
+                alt="Button to Changelog area" 
+                onmouseover="NavChangelogOn('nav-id-changelog')"
+                onmouseout="NavChangelogOff('nav-id-changelog')">
+            </a>
         </nav>
     </header>
+
+    <!-- Main Image Area -->
+
     <section id="carousel-area-id" class="carousel-area">
         <div class="carousel-images">
-
-            <img class="carousel-image-1" src="imgs/background2-cut-header.jpg" alt="MiceBlock preview">
-
+            <img class="carousel-image-1" 
+            src="imgs/background2-cut-header.jpg" 
+            alt="MiceBlock preview">
         </div>
     </section>
+
+    <!-- Download Area -->
+
     <section id="download-area-id" class="download-area">
         <div class="download-options">
             <table class="download-options-table">
                 <tr>
                     <td class="download-table-icon">
-                        <img class="download-icons" src="imgs/gold-block-render.png" alt="Gold Block, MiceBlock logo">
+                        <img class="download-icons" 
+                        src="imgs/gold-block-render.png" 
+                        alt="Gold Block with MiceBlock texture">
                     </td>
                     <td class="download-table-text">
                         <p>
-                            MiceBlock Default
+                            MiceBlock<br>Default
                         </p>
                     </td>
                     <td class="download-table-download">
-                        <img id="download-button-image1" class="download-button-images"
-                            src="imgs/download-icon-gold.png" alt="Download Button" onmouseover="DownloadButtonOn(1)"
-                            onmouseout="DownloadButtonOff(1)">
+                        <img id="download-button-image1" 
+                        class="download-button-images"
+                        src="imgs/download-icon-gold.png" 
+                        alt="Download Button" 
+                        onmouseover="DownloadButtonOn(1)"
+                        onmouseout="DownloadButtonOff(1)">
                     </td>
                 </tr>
                 <tr>
                     <td class="download-table-icon">
-                        <img class="download-icons" src="imgs/redstone-block-render.png"
-                            alt="Gold Block, MiceBlock logo">
+                        <img class="download-icons" 
+                        src="imgs/redstone-block-render.png"
+                        alt="Redstone Block with MiceBlock texture">
                     </td>
                     <td class="download-table-text">
                         <p>
-                            MiceBlock Option 2
+                            MiceBlock<br>No items
                         </p>
                     </td>
                     <td class="download-table-download">
-                        <img id="download-button-image2" class="download-button-images"
-                            src="imgs/download-icon-gold.png" alt="Download Button" onmouseover="DownloadButtonOn(2)"
-                            onmouseout="DownloadButtonOff(2)">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="download-table-icon">
-                        <img class="download-icons" src="imgs/obsidian-block-render.png"
-                            alt="Gold Block, MiceBlock logo">
-                    </td>
-                    <td class="download-table-text">
-                        <p>
-                            MiceBlock Option 3
-                        </p>
-                    </td>
-                    <td class="download-table-download">
-                        <img id="download-button-image3" class="download-button-images"
-                            src="imgs/download-icon-gold.png" alt="Download Button" onmouseover="DownloadButtonOn(3)"
-                            onmouseout="DownloadButtonOff(3)">
+                        <img id="download-button-image2" 
+                        class="download-button-images"
+                        src="imgs/download-icon-gold.png" 
+                        alt="Download Button" 
+                        onmouseover="DownloadButtonOn(2)"
+                        onmouseout="DownloadButtonOff(2)">
                     </td>
                 </tr>
             </table>
         </div>
     </section>
+
+    <!-- FAQ Area -->
+
     <section id="faq-area-id" class="faq-area">
         <div class="faq-div">
             <h1>FAQ</h1>
@@ -111,6 +140,9 @@
             -->
         </div>
     </section>
+
+<!-- Changelog Area-->
+
     <section id="changelog-area-id" class="changelog-area">
         <div class="changelog-div">
             <h1>Changelog</h1>
@@ -146,8 +178,11 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer Area -->
+
     <footer>
-        <p>MiceBlocks</p>
+        <img class="mice-text-footer" src="imgs/mice-text.png" alt="MiceBlocks">
         <a href="#header-id">Back to top</a>
     </footer>
     <script src="script.js"></script>
