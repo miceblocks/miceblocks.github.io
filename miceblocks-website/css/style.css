@@ -9,12 +9,17 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-a {
-    text-decoration: none;
-}
+a {text-decoration: none;}
+html {scroll-behavior: smooth;}
 
-html {
-    scroll-behavior: smooth;
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    font-size: 300%;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 /*Go to Top Button*/
@@ -31,11 +36,13 @@ html {
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-  }
-  /*
-  #top-arrow-id:hover {
-    background-color: #555;
-  }*/
+}
+
+/* Ad Area*/
+.ad-area {
+    background-color: #1f1f1f;
+    height: 128px;
+}
 
 /*Header*/
 header {
@@ -48,20 +55,20 @@ img.mice-text {
     display:block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 60%;
 }
 
 /*Menu*/
 .nav-buttons {
     background: #8aacff;
-    padding: 20px;
+    padding: 5px;
 }
 
 .nav-buttons img {
-    /*border: 2px solid #ffe970;*/
-    width: 25%;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 20%;
 }
-
 
 /*Carousel*/
 .carousel-images {
@@ -83,90 +90,114 @@ img.mice-text {
 
 /*Download Area*/
 .download-area {
-    color: black;
-    background: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    color: white;
+    background-color: #282828;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
 }
 
 .download-options-table {
-    /*border: 2px solid #e0bf00;*/
-    /*padding: 5%;*/
     margin-left: auto;
     margin-right: auto;
-    table-layout: fixed; 
-    font-size: 150%;
-    width: 80%;
+    margin-bottom: 25px;
+    /*border: 2px solid #1f1f1f;*/
 }
 
-.download-options {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    /*border: black;
-    border-style: solid 2px;*/
+.download-options-table div {
+    padding: 20px;
+    /*border: 2px solid #1f1f1f;*/
+}
+
+.download-text-div {
+    font-size: 1.2em;
+    padding: 25px;
+}
+.download-icon-div h2 {
+    font-size: 1.5em;
+}
+
+.download-text-description {
+    list-style-type: none;
+    text-align: justify;
+    font-size: 1em;
 }
 
 .download-icons {
-    width: 50%;
+    width: 35%;
 }
-
-/*
-.download-table-icon {
-    height: 100%;
-    width: 100%;
-}
-*/
 
 .download-button-images {
-    width: 120%;
+    width: 75%;
+    /*cursor: pointer;*/
+}
+
+/* Download Versions */
+.download-version-toggle {
+    padding: 10px;
+    margin-bottom: 25px;
+    color: white;
+    background: #4e4e4e;
     cursor: pointer;
 }
 
-/*
-.download-options-table td {
-    border: 4px solid #ffe970;
+.download-version-toggle:hover {
+    background: white;
+    color: #4e4e4e;
 }
-*/
+
+.download-versions-div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 25px;
+    border: 4px solid #1f1f1f;
+}
+.download-versions-div h2 {
+    font-size: 150%;
+}
+
+.download-versions-div table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+  
+.download-versions-div td, th {
+    border: 4px solid #1f1f1f;
+    font-size: 125%;
+    text-align: center;
+    padding: 12px;
+}
+
 
 /*Faq Area*/
-div.faq-div {
-    width: 55%;
-    margin-left: auto;
-    margin-right: auto;
-    /*color: white;
-    background-color: #5d0081;
-    padding: 40px;*/
-    text-align: justify;
-}
-
-div.faq-div h1 {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 70%;
-    font-size: 180%;
-    border-bottom: black solid 1px;
-    margin-bottom: 25px;
+.faq-area {
+    color: white;
+    background-color: #282828;
     padding-bottom: 25px;
 }
 
-div.faq-div h2 {
-    font-size: 110%;
-}
-
-div.faq-div p {
-    margin-bottom: 25px;
-    
-}
-
-/*Chargelog Area*/
-.changelog-div {
+.faq-div {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 
-.changelog-div h1 {
-    font-size: 180%;
+.faq-div h2 {
+    margin-top: 25px;
+    font-size: 110%;
+}
+
+/*Chargelog Area*/
+.changelog-area {
+    text-align: center;
+    color: white;
+    background: #282828;
+    padding-bottom: 25px;
 }
 
 .changelog-div h2 {
@@ -180,15 +211,13 @@ div.faq-div p {
 .changelog-block {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 25px;
-    width: 60%;
+    width: 85%;
     height: 400px;
     overflow: auto;
     text-align: justify;
     padding: 40px;
     /*border: 4px solid #ffe970;*/
 }
-
 
 /*Footer Area*/
 footer {
@@ -216,3 +245,26 @@ footer p {
     font-size: 110%;
 }
 
+/* Mobile Devices*/
+@media only screen and (max-width: 420px) {
+    /* Header */
+    img.mice-text {width: 80%;}
+    /*Menu*/
+    .nav-buttons img {width: 30%;}
+
+    /* Download Versions */
+
+    .download-versions-div h2 {
+        font-size: 100%;
+    }
+    .download-versions-div {
+        width: 100%;
+    }
+      
+    .download-versions-div td, th {
+        font-size: 90%;
+        border: 2px solid #1f1f1f;
+        text-align: center;
+        padding: 2px;
+    }
+}

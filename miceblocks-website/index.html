@@ -30,26 +30,26 @@
             <a href="#faq-area-id">
                 <img id="nav-id-info" 
                 class="nav-info" 
-                src="imgs/info-button-unselected.png" 
+                src="imgs/nav-id-info-off.png" 
                 alt="Button to Info area" 
-                onmouseover="NavInfoOn('nav-id-info')"
-                onmouseout="NavInfoOff('nav-id-info')">
+                onmouseover="ButtonOn('nav-id-info')"
+                onmouseout="ButtonOff('nav-id-info')">
             </a>
             <a href="#download-area-id">
                 <img id="nav-id-download" 
                 class="nav-download" 
-                src="imgs/download-button-unselected.png" 
+                src="imgs/nav-id-download-off.png" 
                 alt="Button to Download area" 
-                onmouseover="NavDownloadOn('nav-id-download')"
-                onmouseout="NavDownloadOff('nav-id-download')">
+                onmouseover="ButtonOn('nav-id-download')"
+                onmouseout="ButtonOff('nav-id-download')">
             </a>
             <a href="#changelog-area-id">
                 <img id="nav-id-changelog" 
                 class="nav-changelog" 
-                src="imgs/changelog-button-unselected.png" 
+                src="imgs/nav-id-changelog-off.png" 
                 alt="Button to Changelog area" 
-                onmouseover="NavChangelogOn('nav-id-changelog')"
-                onmouseout="NavChangelogOff('nav-id-changelog')">
+                onmouseover="ButtonOn('nav-id-changelog')"
+                onmouseout="ButtonOff('nav-id-changelog')">
             </a>
         </nav>
     </header>
@@ -64,60 +64,102 @@
         </div>
     </section>
 
+    <!-- Ad Area-->
+    <section id="ad-area-id-1" class="ad-area">
+
+    </section>
+
     <!-- Download Area -->
 
+    
     <section id="download-area-id" class="download-area">
-        <div class="download-options">
-            <table class="download-options-table">
-                <tr>
-                    <td class="download-table-icon">
-                        <img class="download-icons" 
-                        src="imgs/gold-block-render.png" 
-                        alt="Gold Block with MiceBlock texture">
-                    </td>
-                    <td class="download-table-text">
-                        <p>
-                            MiceBlock<br>Default
-                        </p>
-                    </td>
-                    <td class="download-table-download">
-                        <img id="download-button-image1" 
-                        class="download-button-images"
-                        src="imgs/download-icon-gold.png" 
-                        alt="Download Button" 
-                        onmouseover="DownloadButtonOn(1)"
-                        onmouseout="DownloadButtonOff(1)">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="download-table-icon">
-                        <img class="download-icons" 
-                        src="imgs/redstone-block-render.png"
-                        alt="Redstone Block with MiceBlock texture">
-                    </td>
-                    <td class="download-table-text">
-                        <p>
-                            MiceBlock<br>No items
-                        </p>
-                    </td>
-                    <td class="download-table-download">
-                        <img id="download-button-image2" 
-                        class="download-button-images"
-                        src="imgs/download-icon-gold.png" 
-                        alt="Download Button" 
-                        onmouseover="DownloadButtonOn(2)"
-                        onmouseout="DownloadButtonOff(2)">
-                    </td>
-                </tr>
-            </table>
+        <h1>Downloads</h1>
+        <table class="download-options-table">
+            <td>
+                <div class="download-icon-div">
+                    <img class="download-icons" 
+                    src="imgs/gold-block-render.png" 
+                    alt="Gold Block with MiceBlock texture">
+                    <h2>MiceBlock Default</h2>
+                </div>
+                <div class="download-text-div">
+                    <p>
+                        The Default MiceBlock Experience!
+                    </p>
+                </div>
+                <div class="download-button-div">
+                    <img id="download-button-option1" 
+                    class="download-button-images" 
+                    src="imgs/download-button-option1-blocked.png"
+                    alt="Download Button">
+                </div>
+            </td>
+            <td>
+                <div class="download-icon-div">
+                    <img class="download-icons" 
+                    src="imgs/redstone-block-render.png" 
+                    alt="Gold Block with MiceBlock texture">
+                    <h2>MiceBlock Lite</h2>
+                </div>
+                <div class="download-text-div">
+                    <p>
+                        The Lite Version MiceBlock Experience!
+                    </p>
+                </div>
+                <div class="download-button-div">
+                    <img id="download-button-option1" 
+                    class="download-button-images" 
+                    src="imgs/download-button-option1-blocked.png"
+                    alt="Download Button">
+                </div>
+            </td>
+        </table>  
+        <div class="download-versions">
+            <h1>Versions</h1>
+            <button class="download-version-toggle" onclick="DownloadVersionToggle()">Toggle</button>
+            <div style="display: none;" class="download-versions-div" id="download-versions-id">
+                <h2>Default Version</h2>
+                <table>
+                    <tr>
+                        <th>Minecraft</th><th>Version</th><th>Resolution</th><th>Link</th>
+                    </tr>
+                    <tr>
+                        <td>--</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                </table>
+                <h2>Lite Version</h2>
+                <table>
+                    <tr>
+                        <th>Minecraft</th><th>Version</th><th>Resolution</th><th>Link</th>
+                    </tr>
+                    <tr>
+                        <td>1.15.2</td><td>Alpha 0.8</td><td>16x16</td><td>None</td>
+                    </tr>
+                </table>
+            </div>
         </div>
+
+        <!--
+        <img id="download-button-option1" 
+        class="download-button-images" 
+        src="imgs/download-button-option1-off.png"
+        alt="Download Button" 
+        onmouseover="ButtonOn('download-button-option1')"
+        onmouseout="ButtonOff('download-button-option1')">
+        -->
+        
+    </section>
+
+    <!-- Ad Area-->
+    <section id="ad-area-id-2" class="ad-area">
+
     </section>
 
     <!-- FAQ Area -->
 
     <section id="faq-area-id" class="faq-area">
         <div class="faq-div">
-            <h1>FAQ</h1>
+            <h1>Info</h1>
             <h2>What is Mice Blocks?</h2>
             <br>
             <p>
@@ -139,6 +181,11 @@
             </p>
             -->
         </div>
+    </section>
+
+<!-- Ad Area-->
+    <section id="ad-area-id-3" class="ad-area">
+
     </section>
 
 <!-- Changelog Area-->
@@ -183,7 +230,6 @@
 
     <footer>
         <img class="mice-text-footer" src="imgs/mice-text.png" alt="MiceBlocks">
-        <a href="#header-id">Back to top</a>
     </footer>
     <script src="script.js"></script>
 </body>
