@@ -8,11 +8,13 @@ function ButtonOff(name) {
   image.src = "imgs/" + name + "-off.png";
 }
 
-function DownloadVersionToggle() {
-  var x = document.getElementById("download-versions-id");
+function SpoilerVersionToggle(name) {
+  var x = document.getElementById(name);
   if (x.style.display === "none") {
     x.style.display = "block";
+    document.getElementById(name + '-button').innerHTML = 'Close';
   } else {
+    document.getElementById(name + '-button').innerHTML = 'Open';
     x.style.display = "none";
   }
 }

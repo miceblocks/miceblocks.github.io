@@ -17,9 +17,29 @@ h1 {
     margin-right: auto;
     text-align: center;
     width: 100%;
-    font-size: 300%;
+    font-size: 250%;
     margin-bottom: 15px;
     padding-bottom: 15px;
+}
+
+/* Universal class*/
+.center-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Spoiler Buttons */
+.spoiler-button-toggle {
+    padding: 10px;
+    margin-bottom: 25px;
+    color: white;
+    background: #4e4e4e;
+    cursor: pointer;
+}
+
+.spoiler-button-toggle:hover {
+    background: white;
+    color: #4e4e4e;
 }
 
 /*Go to Top Button*/
@@ -53,8 +73,6 @@ header {
 }
 img.mice-text {
     display:block;
-    margin-left: auto;
-    margin-right: auto;
     width: 60%;
 }
 
@@ -72,8 +90,6 @@ img.mice-text {
 
 /*Carousel*/
 .carousel-images {
-    margin-left: auto;
-    margin-right: auto;
     height: 100%;
     width: 100%;
     background: #8aacff;
@@ -82,10 +98,7 @@ img.mice-text {
 .carousel-image-1 {
     display:block;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     /*margin-bottom: 25px;*/
-    
 }
 
 /*Download Area*/
@@ -98,8 +111,6 @@ img.mice-text {
 }
 
 .download-options-table {
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 25px;
     /*border: 2px solid #1f1f1f;*/
 }
@@ -133,23 +144,8 @@ img.mice-text {
 }
 
 /* Download Versions */
-.download-version-toggle {
-    padding: 10px;
-    margin-bottom: 25px;
-    color: white;
-    background: #4e4e4e;
-    cursor: pointer;
-}
-
-.download-version-toggle:hover {
-    background: white;
-    color: #4e4e4e;
-}
-
 .download-versions-div {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+    width: 75%;
     padding: 25px;
     border: 4px solid #1f1f1f;
 }
@@ -159,8 +155,6 @@ img.mice-text {
 
 .download-versions-div table {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     border-collapse: collapse;
     margin-bottom: 25px;
 }
@@ -182,9 +176,12 @@ img.mice-text {
 
 .faq-div {
     width: 85%;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
+}
+
+.faq-howtoinstall {
+    text-align: justify;
+    width: fit-content;
 }
 
 .faq-div h2 {
@@ -206,11 +203,10 @@ img.mice-text {
 
 .changelog-div h3 {
     font-size: 120%;
+    margin-top: 25px;
 }
 
 .changelog-block {
-    margin-left: auto;
-    margin-right: auto;
     width: 85%;
     height: 400px;
     overflow: auto;
@@ -230,8 +226,6 @@ footer {
 
 .mice-text-footer {
     display:block;
-    margin-left: auto;
-    margin-right: auto;
     width: 30%;
 }
 
@@ -246,14 +240,17 @@ footer p {
 }
 
 /* Mobile Devices*/
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 480px) {
     /* Header */
     img.mice-text {width: 80%;}
     /*Menu*/
     .nav-buttons img {width: 30%;}
 
+    /* Download Area */
+    .download-icon-div h2 {
+        font-size: 1.2em;
+    }
     /* Download Versions */
-
     .download-versions-div h2 {
         font-size: 100%;
     }
