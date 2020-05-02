@@ -22,11 +22,14 @@
     <a href="#header-id">
         <img id="top-arrow-id" class="top-arrow button-shadow" src="imgs/arrow-top.png" alt="To Top Arrow" onclick="topFunction()">
     </a>
+
     <!-- Header -->
 
     <header id="header-id">
-        <img class="mice-text center-content" src="imgs/mice-text.png" alt="MiceBlocks">
-        <nav class="nav-buttons">
+        <a href="index.html">
+            <img class="mice-text center-content" src="imgs/mice-text.png" alt="MiceBlocks">
+        </a>
+        <nav id="header-nav-id" class="nav-buttons">
             <a href="#faq-area-id">
                 <img id="nav-id-info" 
                 class="button-shadow" 
@@ -55,13 +58,12 @@
     </header>
 
     <!-- Main Image Area -->
-
-    <section id="carousel-area-id" class="carousel-area">
-        <div class="carousel-images center-content">
-            <img class="carousel-image-1 center-content" 
-            src="imgs/background2-cut-header.jpg" 
-            alt="MiceBlock preview">
-        </div>
+    <section id="carousel-area-id" class="carousel-area slideshow-container">
+        <img class="carousel-images center-content" src="imgs/background-main.jpg" style="width:100%">
+        <img class="carousel-images center-content" src="imgs/background1.jpg" style="width:100%">
+        <img class="carousel-images center-content" src="imgs/background2.jpg" style="width:100%">
+        <a class="prev carousel-arrows" onclick="plusSlides(1)">&#10094;</a>
+        <a class="next carousel-arrows" onclick="plusSlides(-1)">&#10095;</a>
     </section>
 
     <!-- Ad Area-->
@@ -70,7 +72,6 @@
     </section>
 
     <!-- Download Area -->
-
     
     <section id="download-area-id" class="download-area">
         <h1>Downloads</h1>
@@ -115,6 +116,7 @@
             </td>
         </table>  
         <div class="download-versions">
+            
             <h1>Versions</h1>
             <button class="spoiler-button-toggle button-shadow" id="download-versions-id-button" onclick="SpoilerVersionToggle('download-versions-id')">Open</button>
             <div style="display: none;" class="download-versions-div center-content" id="download-versions-id">
@@ -254,5 +256,4 @@
     </footer>
     <script src="script.js"></script>
 </body>
-
 </html>
