@@ -1,4 +1,4 @@
-/*Universal*/
+/* ================Universal================*/
 * {
     margin: 0%;
     padding: 0%;
@@ -19,7 +19,7 @@ h1 {
     margin-bottom: 15px;
 }
 
-/* Universal class*/
+/* ================Universal class================*/
 .center-content {
     margin-left: auto;
     margin-right: auto;
@@ -29,7 +29,11 @@ h1 {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, .5);
 }
 
-/* Spoiler Buttons */
+.button-shadow:hover {
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+/* ================Spoiler Buttons================ */
 .spoiler-button-toggle {
     padding: 10px;
     margin-bottom: 25px;
@@ -43,7 +47,7 @@ h1 {
     color: #4e4e4e;
 }
 
-/*Go to Top Button*/
+/*================Go to Top Button================*/
 #top-arrow-id {
     display: none;
     position: fixed;
@@ -58,17 +62,15 @@ h1 {
     border-radius: 4px;
 }
 
-/* Ad Area*/
+/* ================Ad Area================*/
 .ad-area {
     background-color: #1f1f1f;
-    height: 128px;
+    /*height: 128px;*/
 }
 
-/*Header*/
+/*================Header================*/
 header {
-    /*4f659b*/
-    /*546395*/
-    /*324062*/
+    transition: 1s;
     background: #8aacff;
     /*padding: 25px;*/
     text-align: center;
@@ -79,8 +81,9 @@ img.mice-text {
     width: 60%;
 }
 
-/*Menu*/
+/*================Menu================*/
 .nav-buttons {
+    transition: 1s;
     background: #8aacff;
     padding: 5px;
 }
@@ -91,11 +94,22 @@ img.mice-text {
     width: 20%;
 }
 
-/*Carousel*/
+/*================Carousel================*/
 .carousel-arrows:hover {
     transition: .2s;
     background: rgba(0, 0, 0, .5);
     cursor: pointer;
+}
+
+.carousel-images {
+    transition: 1s;
+    background: url('../imgs/background-main.jpg'); 
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 37.5%;
 }
 
 /* Slideshow container */
@@ -112,6 +126,7 @@ img.mice-text {
     width: auto;
     padding: 16px;
     color: white;
+    background: rgba(0, 0, 0, .2);
     font-weight: bold;
     font-size: 300%;
     transition: 0.6s ease;
@@ -128,7 +143,7 @@ img.mice-text {
     left: 5%;
 }
 
-/*Download Area*/
+/*================Download Area================*/
 .download-area {
     color: white;
     background-color: #282828;
@@ -198,7 +213,7 @@ img.mice-text {
     background-color: #1f1f1f;
 }
 
-/*Faq Area*/
+/*================Faq Area================*/
 .faq-area {
     color: white;
     background-color: #282828;
@@ -220,7 +235,7 @@ img.mice-text {
     font-size: 110%;
 }
 
-/*Chargelog Area*/
+/*================Chargelog Area================*/
 .changelog-area {
     text-align: center;
     color: white;
@@ -246,7 +261,7 @@ img.mice-text {
     border: 4px solid #1f1f1f;
 }
 
-/* Changelog block custom scroll */
+/* ================Changelog block custom scroll================ */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -262,7 +277,7 @@ img.mice-text {
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
-/*Footer Area*/
+/*================Footer Area================*/
 footer {
     color: white;
     padding: 20px;
@@ -286,23 +301,23 @@ footer p {
     font-size: 110%;
 }
 
-/* Mobile Devices*/
+/* ================Mobile Devices================ */
 @media only screen and (max-width: 480px) {
-    /* Go To Top Button */
+    /* ================Go To Top Button================ */
     #top-arrow-id {
         width: 0;
     }
-    /* Header */
+    /* ================Header================ */
 
     img.mice-text {width: 80%;}
-    /*Menu*/
+    /*================Menu================*/
     .nav-buttons img {width: 30%;}
 
-    /* Download Area */
+    /* ================Download Area================ */
     .download-icon-div h2 {
         font-size: 1.2em;
     }
-    /* Download Versions */
+    /* ================Download Versions================ */
     .download-versions-div h2 {
         font-size: 100%;
     }
@@ -316,17 +331,17 @@ footer p {
         text-align: center;
         padding: 2px;
     }
-    /* Faq Area */
+    /* ================Faq Area================ */
     .faq-div {
         width: 90%;
     }
 
-    /* Changelog Area */
+    /* ================Changelog Area================ */
     .changelog-block {
         width: 100%;
     }
 
-    /* Footer */
+    /* ================Footer================ */
     .mice-text-footer {
         display: block;
         width: 50%;

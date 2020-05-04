@@ -20,7 +20,10 @@
 <body>
     <!-- Go to Top Button -->
     <a href="#header-id">
-        <img id="top-arrow-id" class="top-arrow button-shadow" src="imgs/arrow-top.png" alt="To Top Arrow" onclick="topFunction()">
+        <img id="top-arrow-id" 
+        class="top-arrow button-shadow" 
+        src="imgs/arrow-top.png" alt="To Top Arrow" 
+        onclick="topFunction()">
     </a>
 
     <!-- Header -->
@@ -32,7 +35,7 @@
         <nav id="header-nav-id" class="nav-buttons">
             <a href="#faq-area-id">
                 <img id="nav-id-info" 
-                class="button-shadow" 
+                class="nav-buttons-img button-shadow" 
                 src="imgs/nav-id-info-off.png" 
                 alt="Button to Info area" 
                 onmouseover="ButtonOn('nav-id-info')"
@@ -40,7 +43,7 @@
             </a>
             <a href="#download-area-id">
                 <img id="nav-id-download" 
-                class="button-shadow" 
+                class="nav-buttons-img button-shadow" 
                 src="imgs/nav-id-download-off.png" 
                 alt="Button to Download area" 
                 onmouseover="ButtonOn('nav-id-download')"
@@ -48,7 +51,7 @@
             </a>
             <a href="#changelog-area-id">
                 <img id="nav-id-changelog" 
-                class="button-shadow" 
+                class="nav-buttons-img button-shadow" 
                 src="imgs/nav-id-changelog-off.png" 
                 alt="Button to Changelog area" 
                 onmouseover="ButtonOn('nav-id-changelog')"
@@ -59,17 +62,84 @@
 
     <!-- Main Image Area -->
     <section id="carousel-area-id" class="carousel-area slideshow-container">
+        <div id="carousel-images-id" class="carousel-images">
+        </div>
+        <!--
         <img class="carousel-images center-content" src="imgs/background-main.jpg" style="width:100%">
         <img class="carousel-images center-content" src="imgs/background1.jpg" style="width:100%">
         <img class="carousel-images center-content" src="imgs/background2.jpg" style="width:100%">
-        <a class="prev carousel-arrows" onclick="plusSlides(1)">&#10094;</a>
-        <a class="next carousel-arrows" onclick="plusSlides(-1)">&#10095;</a>
+        -->
+        <button class="prev carousel-arrows" onclick="showSlides(1)">&#10094;</button>
+        <button class="next carousel-arrows" onclick="showSlides(-1)">&#10095;</button>
+
     </section>
 
     <!-- Ad Area-->
     <section id="ad-area-id-1" class="ad-area">
 
     </section>
+
+    <!-- FAQ Area -->
+
+    <section id="faq-area-id" class="faq-area">
+        <div class="faq-div center-content">
+            <h1>Info</h1>
+            <h2>What is Mice Blocks?</h2>
+            <br>
+            <p>
+                Mice Blocks is a Minecraft Resource Pack inspired by oCd Pack.
+                We are at very early stage of development, so be prepared for big changes in the future.
+            </p>
+            <h2>How can I install this resource pack?</h2>
+            <br>
+            <p>Follow these steps:</p>
+            <button class="spoiler-button-toggle button-shadow" id="faq-howtoinstall-id-button" onclick="SpoilerVersionToggle('faq-howtoinstall-id')">Open</button>
+            <div style="display: none;" class="faq-howtoinstall center-content" id="faq-howtoinstall-id">
+                <ol>
+                    <li><b>Download</b> the resource pack;</li>
+                    <li>Open the folder to which you downloaded the file;</li>
+                    <li><b>Copy the .zip file</b>;</li>
+                    <li>Open Minecraft;</li>
+                    <li>Click on <b>"Options"</b>, then <b>"Resource Packs"</b>;</li>
+                    <li>Choose <b>"Open resource pack folder"</b>;</li>
+                    <li><b>Paste the file</b> into the resource folder in Minecraft;</li>
+                    <li>Go back to Minecraft, the resource pack <b>should now be listed</b>.</li>
+                </ol>
+                <br>
+                <ul>
+                    <li><b>If not listed</b>, go to the main menu by pressing Esc <b>and repeat step 5)</b>.</li>
+                    <li>You can see more details <a href="https://minecraft.gamepedia.com/Tutorials/Loading_a_resource_pack" target="_blank"><b>Here</b></a> (Minecraft Wikipedia).</li>
+                </ul>
+            </div>
+            <h2>Wait! This is another copy of oCd Pack!</h2>
+            <br>
+            <p>
+                1° this is't a question.
+                2° At the moment, a lot of the textures are placeholders.
+                In the near future, I'll update the TexturePack with new and original textures.
+            </p>
+            <h2>Can i [something]...?</h2>
+            <br>
+            <p>You are NOT allowed to redistribute this pack without my explicit permission. 
+                You are NOT allowed to take any of these textures out of my pack and claim them as your own. 
+                If you are created a texture pack solely for yourself and are not sharing it with anyone, 
+                you may use these textures as well but please do not redistribute this pack or steal any of my work. Thanks!</p>
+
+            <!--<h2>What?</h2>
+            <br>
+            <p>
+                English is't my main language, sorry :c
+            </p>
+            -->
+        </div>
+    </section>
+
+<!-- Ad Area-->
+    <section id="ad-area-id-3" class="ad-area">
+
+    </section>
+
+
 
     <!-- Download Area -->
     
@@ -154,60 +224,6 @@
 
     <!-- Ad Area-->
     <section id="ad-area-id-2" class="ad-area">
-
-    </section>
-
-    <!-- FAQ Area -->
-
-    <section id="faq-area-id" class="faq-area">
-        <div class="faq-div center-content">
-            <h1>Info</h1>
-            <h2>What is Mice Blocks?</h2>
-            <br>
-            <p>
-                Mice Blocks is a Minecraft Resource Pack inspired by oCd Pack.
-                We are at very early stage of development, so be prepared for big changes in the future.
-            </p>
-            <h2>How can I install this resource pack?</h2>
-            <br>
-            <p>Follow these steps:</p>
-            <button class="spoiler-button-toggle button-shadow" id="faq-howtoinstall-id-button" onclick="SpoilerVersionToggle('faq-howtoinstall-id')">Open</button>
-            <div style="display: none;" class="faq-howtoinstall center-content" id="faq-howtoinstall-id">
-                <ol>
-                    <li><b>Download</b> the resource pack;</li>
-                    <li>Open the folder to which you downloaded the file;</li>
-                    <li><b>Copy the .zip file</b>;</li>
-                    <li>Open Minecraft;</li>
-                    <li>Click on <b>"Options"</b>, then <b>"Resource Packs"</b>;</li>
-                    <li>Choose <b>"Open resource pack folder"</b>;</li>
-                    <li><b>Paste the file</b> into the resource folder in Minecraft;</li>
-                    <li>Go back to Minecraft, the resource pack <b>should now be listed</b>.</li>
-                </ol>
-                <br>
-                <ul>
-                    <li><b>If not listed</b>, go to the main menu by pressing Esc <b>and repeat step 5)</b>.</li>
-                    <li>You can see more details <a href="https://minecraft.gamepedia.com/Tutorials/Loading_a_resource_pack" target="_blank"><b>Here</b></a> (Minecraft Wikipedia).</li>
-                </ul>
-            </div>
-            <h2>Wait! This is another copy of oCd Pack!</h2>
-            <br>
-            <p>
-                1° this is't a question.
-                2° At the moment, a lot of the textures are placeholders.
-                In the near future, I'll update the TexturePack with new and original textures.
-            </p>
-
-            <!--<h2>What?</h2>
-            <br>
-            <p>
-                English is't my main language, sorry :c
-            </p>
-            -->
-        </div>
-    </section>
-
-<!-- Ad Area-->
-    <section id="ad-area-id-3" class="ad-area">
 
     </section>
 
