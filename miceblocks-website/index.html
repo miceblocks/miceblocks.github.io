@@ -63,14 +63,14 @@
 
     <!-- Main Image Area -->
     <section id="carousel-area-id" class="carousel-area slideshow-container">
-        <div id="carousel-images-id" class="carousel-images">
+        <div id="carousel-images-id" class="carousel-images" onclick="document.getElementById('carousel-image-arrow-right').click();">
         </div>
         <!--
         <img class="carousel-images center-content" src="imgs/background-main.jpg" style="width:100%">
         <img class="carousel-images center-content" src="imgs/background1.jpg" style="width:100%">
         <img class="carousel-images center-content" src="imgs/background2.jpg" style="width:100%">
         -->
-        <button class="prev carousel-arrows" onclick="showSlides(1)">&#10094;</button>
+        <button id="carousel-image-arrow-right" class="prev carousel-arrows" onclick="showSlides(1)">&#10094;</button>
         <button class="next carousel-arrows" onclick="showSlides(-1)">&#10095;</button>
 
     </section>
@@ -160,6 +160,9 @@
                     </p>
                 </div>
                 <div class="download-button-div">
+                    <p>
+                        Last version:
+                    </p>
                     <img id="download-button-option1" 
                     class="download-button-images button-shadow" 
                     src="imgs/download-button-option1-blocked.png"
@@ -177,8 +180,12 @@
                     <p>
                         The Lite Version of MiceBlock
                     </p>
+                    
                 </div>
                 <div class="download-button-div">
+                    <p>
+                        Last version:
+                    </p>
                     <img id="download-button-option1" 
                     class="download-button-images button-shadow" 
                     src="imgs/download-button-option1-blocked.png"
@@ -189,6 +196,7 @@
         <div class="download-versions">
             
             <h1>Versions</h1>
+            <p>All released versions:</p>
             <button class="spoiler-button-toggle button-shadow" id="download-versions-id-button" onclick="SpoilerVersionToggle('download-versions-id')">Open</button>
             <div style="display: none;" class="download-versions-div center-content" id="download-versions-id">
                 <h2>Default Version</h2>

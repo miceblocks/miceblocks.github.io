@@ -325,6 +325,12 @@ footer p {
     /*================Menu================*/
     .nav-buttons img {width: 30%;}
 
+    /*================Carousel================*/
+    .prev, .next {
+        top: 30%;
+        font-size: 100%;
+    }
+
     /* ================Download Area================ */
     .download-icon-div h2 {
         font-size: 1.2em;
