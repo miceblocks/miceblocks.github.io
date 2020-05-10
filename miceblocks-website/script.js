@@ -1,3 +1,5 @@
+
+/*================Universal Button Mouse in/out================*/
 function ButtonOn(name) {
   var image = document.getElementById(name);
   image.src = "imgs/" + name + "-on.png";
@@ -8,6 +10,8 @@ function ButtonOff(name) {
   image.src = "imgs/" + name + "-off.png";
 }
 
+
+/*================Universal Spoiler Area================*/
 function SpoilerVersionToggle(name) {
   var x = document.getElementById(name);
   if (x.style.display === "none") {
@@ -19,7 +23,7 @@ function SpoilerVersionToggle(name) {
   }
 }
 
-
+/*================Go To Top Button================*/
 var topbutton = document.getElementById("top-arrow-id");
 var scrollTest = true;
 window.onscroll = function() {scrollFunction()};
@@ -45,6 +49,8 @@ function topFunction() {
   scrollTest = false;
 }
 
+
+/*================Carousel Area================*/
 var slideIndex = 1
 var arrowsId = document.getElementsByClassName("carousel-arrows");
 var imageId = document.getElementById("carousel-images-id");
