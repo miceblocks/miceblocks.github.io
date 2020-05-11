@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Minecraft Resource Pack inspired by oCd Pack">
+    <meta name="author" content="Midlou">
+    <meta name="keywords" content="Minecraft, Texture Pack, Resource Pack, 16x16">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="css/_style.css">
+    <link rel="stylesheet" href="css/_gallery.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="imgs/gold_block.png">
+    <!--
+    <link rel="stylesheet" href="css/normalize.css">
+    -->
+    <title>MiceBlocks</title>
+</head>
+
+<body onload="initComparisons()">
+    <!-- Go to Top Button -->
+    <a href="#header-id">
+        <img id="top-arrow-id" 
+        class="top-arrow button-shadow" 
+        src="imgs/arrow-top.png" alt="To Top Arrow" 
+        onclick="topFunction()">
+    </a>
+
+    <!-- Header -->
+    <header id="header-id">
+        <h1 class="logo_text link-icon">MiceBlock - A Minecraft Texture Pack</h1>
+        <a href="index.html">
+            <img class="logo_img center-content" src="imgs/mice-text.png" alt="MiceBlock - A Minecraft Texture Pack">
+        </a>
+        <nav id="header-nav-id" class="nav-buttons">
+            <a href="index.html">
+                <img id="nav-id-home" 
+                class="nav-buttons-img button-shadow" 
+                src="imgs/nav-id-home-off.png" 
+                alt="Home button" 
+                onmouseover="ButtonOn('nav-id-home', 'nav-id-home')"
+                onmouseout="ButtonOff('nav-id-home', 'nav-id-home')">
+            </a>
+            <a href="downloads.html">
+                <img id="nav-id-download" 
+                class="nav-buttons-img button-shadow" 
+                src="imgs/nav-id-download-off.png" 
+                alt="Button to Download area" 
+                onmouseover="ButtonOn('nav-id-download', 'nav-id-download')"
+                onmouseout="ButtonOff('nav-id-download', 'nav-id-download')">
+            </a>
+            <a href="#gallery-area-id">
+                <img id="nav-id-gallery" 
+                class="nav-buttons-img button-shadow" 
+                src="imgs/nav-id-gallery-off.png" 
+                alt="Button to gallery area" 
+                onmouseover="ButtonOn('nav-id-gallery', 'nav-id-gallery')"
+                onmouseout="ButtonOff('nav-id-gallery', 'nav-id-gallery')">
+            </a>
+        </nav>
+    </header>
+    <!-- gallery Area-->
+    <section id="gallery-area-id" class="gallery-area">
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="imgs/vanilla-image1.jpg">
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                 <img src="imgs/miceblock-image1.jpg">
+            </div>
+        </div>
+    </section>
+        <!--Button Suggestion-->
+        <section id="button-suggestion-id" class="button-suggestion">
+            <h1>Don't wait any longer!</h1>
+            <h2>Download the last version of MiceBlock</h2>
+            <a href="downloads.html#download-area-id">
+                <img id="nav-id-suggestion-download" 
+                class="nav-buttons-img button-shadow" 
+                src="imgs/nav-id-download-off.png" 
+                alt="Button to Download area" 
+                onmouseover="ButtonOn('nav-id-suggestion-download', 'nav-id-download')"
+                onmouseout="ButtonOff('nav-id-suggestion-download', 'nav-id-download')">
+            </a>
+        </section>
+<footer>
+    <a href="#header-id"><img class="mice-text-footer center-content" src="imgs/mice-text.png" alt="MiceBlocks"></a>
+    <p>MiceBlock Texture Pack and MiceBlock Website by Midlou</p>
+    <p style="font-size: .8em;">Icons by FontAwesome</p>
+    <a href="https://steamcommunity.com/profiles/76561198062956433" target="_blank">
+        <i class="footer-icons fab fa-steam fa-2x"></i>
+    </a>
+    <a href="https://github.com/Midlou" target="_blank">
+        <i class="footer-icons fab fa-github fa-2x"></i>
+    </a>
+    
+</footer>
+<script src="script.js"></script>
+<script src="gallery.js"></script>
+<script src="https://kit.fontawesome.com/833adfb60e.js" crossorigin="anonymous"></script>
+</body>
+</html>

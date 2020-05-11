@@ -1,15 +1,14 @@
 
 /*================Universal Button Mouse in/out================*/
-function ButtonOn(name) {
-  var image = document.getElementById(name);
+function ButtonOn(id, name) {
+  var image = document.getElementById(id);
   image.src = "imgs/" + name + "-on.png";
 }
 
-function ButtonOff(name) {
-  var image = document.getElementById(name);
+function ButtonOff(id, name) {
+  var image = document.getElementById(id);
   image.src = "imgs/" + name + "-off.png";
 }
-
 
 /*================Universal Spoiler Area================*/
 function SpoilerVersionToggle(name) {
@@ -47,59 +46,4 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
   topbutton.style.display = "none";
   scrollTest = false;
-}
-
-
-/*================Carousel Area================*/
-var slideIndex = 1
-var arrowsId = document.getElementsByClassName("carousel-arrows");
-var imageId = document.getElementById("carousel-images-id");
-var headerId = document.getElementById("header-id"); 
-var headerNavId = document.getElementById("header-nav-id");
-var slideTimerVar;
-
-function SlideTimer() {
-  slideTimerVar = setTimeout(function(){
-    arrowsId[0].click();
-    SlideTimer();
-  }, 7000);
-}
-
-SlideTimer();
-
-function showSlides(n) {
-  clearTimeout(slideTimerVar);
-  for (i = 0; i < arrowsId.length; i++) {
-    arrowsId[i].disabled = true;
-    arrowsId[i].style.opacity = 0.3;
-  }
-  slideIndex += n;
-  if (slideIndex > 3) {
-    slideIndex = 1;
-  }
-  else if (slideIndex < 1) {
-    slideIndex = 3;
-  }
-  if(slideIndex == 1) {
-    headerId.style.backgroundColor = "#8aacff";
-    headerNavId.style.backgroundColor = "#8aacff";
-    imageId.style.backgroundImage = "url('imgs/background-main.jpg')";
-  }
-  else if(slideIndex == 2) {
-    headerId.style.backgroundColor = "#4f659b";
-    headerNavId.style.backgroundColor = "#4f659b";
-    imageId.style.backgroundImage = "url('imgs/background1.jpg')";
-  }
-  else if(slideIndex == 3) {
-    headerId.style.backgroundColor = "#546395";
-    headerNavId.style.backgroundColor = "#546395";
-    imageId.style.backgroundImage = "url('imgs/background2.jpg')";
-  }
-  
-  setTimeout(function(){
-    for (i = 0; i < arrowsId.length; i++) {
-      arrowsId[i].disabled = false;
-      arrowsId[i].style.opacity = 1;
-    }
-  }, 1500);
 }

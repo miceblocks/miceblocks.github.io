@@ -1,0 +1,89 @@
+/*================Download Area================*/
+.download-area {
+    color: white;
+    background-color: #282828;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.download-options-table {
+    margin-bottom: 25px;
+    /*border: 2px solid #1f1f1f;*/
+}
+
+.download-options-table div {
+    padding: 20px;
+    /*border: 2px solid #1f1f1f;*/
+}
+
+.download-text-div {
+    font-size: 1.2em;
+    padding: 25px;
+}
+.download-icon-div h2 {
+    font-size: 1.5em;
+}
+
+.download-text-description {
+    list-style-type: none;
+    text-align: justify;
+    font-size: 1em;
+}
+
+.download-icons {
+    width: 40%;
+}
+
+.download-button-images {
+    width: 85%;
+    /*cursor: pointer;*/
+}
+
+/* Download Versions */
+.download-versions-div {
+    width: 75%;
+    padding: 25px;
+    /*border: 4px solid #1f1f1f;*/
+}
+.download-versions-div h2 {
+    margin-bottom: 10px;
+    font-size: 150%;
+}
+
+.download-versions-div table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+.download-versions-div td, th {
+    /*border: 4px solid #1f1f1f;*/
+    font-size: 125%;
+    text-align: center;
+    padding: 12px;
+}
+
+.download-versions-div th {
+    background-color: #1f1f1f;
+}
+
+/* ================Mobile Devices================ */
+@media only screen and (max-width: 480px) {
+    /* ================Download Area================ */
+    .download-icon-div h2 {
+        font-size: 1.2em;
+    }
+    /* ================Download Versions================ */
+    .download-versions-div h2 {
+        font-size: 100%;
+    }
+    .download-versions-div {
+        width: 100%;
+    }
+      
+    .download-versions-div td, th {
+        font-size: 90%;
+        border: 2px solid #1f1f1f;
+        text-align: center;
+        padding: 2px;
+    }
+}

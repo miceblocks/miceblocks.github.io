@@ -8,7 +8,7 @@
     <meta name="author" content="Midlou">
     <meta name="keywords" content="Minecraft, Texture Pack, Resource Pack, 16x16">
     <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/_style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="imgs/gold_block.png">
     <!--
@@ -27,40 +27,38 @@
     </a>
 
     <!-- Header -->
-
     <header id="header-id">
         <h1 class="logo_text link-icon">MiceBlock - A Minecraft Texture Pack</h1>
         <a href="index.html">
             <img class="logo_img center-content" src="imgs/mice-text.png" alt="MiceBlock - A Minecraft Texture Pack">
         </a>
         <nav id="header-nav-id" class="nav-buttons">
-            <a href="#faq-area-id">
-                <img id="nav-id-info" 
+            <a href="#info-area-id">
+                <img id="nav-id-home" 
                 class="nav-buttons-img button-shadow" 
-                src="imgs/nav-id-info-off.png" 
-                alt="Button to Info area" 
-                onmouseover="ButtonOn('nav-id-info')"
-                onmouseout="ButtonOff('nav-id-info')">
+                src="imgs/nav-id-home-off.png" 
+                alt="Home button" 
+                onmouseover="ButtonOn('nav-id-home', 'nav-id-home')"
+                onmouseout="ButtonOff('nav-id-home', 'nav-id-home')">
             </a>
-            <a href="#download-area-id">
+            <a href="downloads.html">
                 <img id="nav-id-download" 
                 class="nav-buttons-img button-shadow" 
                 src="imgs/nav-id-download-off.png" 
                 alt="Button to Download area" 
-                onmouseover="ButtonOn('nav-id-download')"
-                onmouseout="ButtonOff('nav-id-download')">
+                onmouseover="ButtonOn('nav-id-download', 'nav-id-download')"
+                onmouseout="ButtonOff('nav-id-download', 'nav-id-download')">
             </a>
-            <a href="#gallery-area-id">
+            <a href="gallery.html">
                 <img id="nav-id-gallery" 
                 class="nav-buttons-img button-shadow" 
                 src="imgs/nav-id-gallery-off.png" 
                 alt="Button to gallery area" 
-                onmouseover="ButtonOn('nav-id-gallery')"
-                onmouseout="ButtonOff('nav-id-gallery')">
+                onmouseover="ButtonOn('nav-id-gallery', 'nav-id-gallery')"
+                onmouseout="ButtonOff('nav-id-gallery', 'nav-id-gallery')">
             </a>
         </nav>
     </header>
-
     <!-- Main Image Area -->
     <section id="carousel-area-id" class="carousel-area slideshow-container">
         <div id="carousel-images-id" class="carousel-images" onclick="document.getElementById('carousel-image-arrow-right').click();">
@@ -75,15 +73,9 @@
 
     </section>
 
-    <!-- Ad Area-->
-    <section id="ad-area-id-1" class="ad-area">
-
-    </section>
-
-    <!-- FAQ Area -->
-
-    <section id="faq-area-id" class="faq-area">
-        <div class="faq-div center-content">
+    <!-- Info Area -->
+    <section id="info-area-id" class="info-area">
+        <div class="info-div center-content">
             <h1>Info</h1>
             <h2>What is Mice Blocks?</h2>
             <br>
@@ -93,25 +85,7 @@
             </p>
             <h2>How can I install this resource pack?</h2>
             <br>
-            <p>Follow these steps:</p>
-            <button class="spoiler-button-toggle button-shadow" id="faq-howtoinstall-id-button" onclick="SpoilerVersionToggle('faq-howtoinstall-id')">Open</button>
-            <div style="display: none;" class="faq-howtoinstall center-content" id="faq-howtoinstall-id">
-                <ol>
-                    <li><b>Download</b> the resource pack;</li>
-                    <li>Open the folder to which you downloaded the file;</li>
-                    <li><b>Copy the .zip file</b>;</li>
-                    <li>Open Minecraft;</li>
-                    <li>Click on <b>"Options"</b>, then <b>"Resource Packs"</b>;</li>
-                    <li>Choose <b>"Open resource pack folder"</b>;</li>
-                    <li><b>Paste the file</b> into the resource folder in Minecraft;</li>
-                    <li>Go back to Minecraft, the resource pack <b>should now be listed</b>.</li>
-                </ol>
-                <br>
-                <ul>
-                    <li><b>If not listed</b>, go to the main menu by pressing Esc <b>and repeat step 5)</b>.</li>
-                    <li>You can see more details <a href="https://minecraft.gamepedia.com/Tutorials/Loading_a_resource_pack" target="_blank"><b>Here</b></a> (Minecraft Wikipedia).</li>
-                </ul>
-            </div>
+            <p>You can see a full tutorial in the Download area <a href="downloads.html#download-area-id"><b>Here</b></a></p>
             <h2>Can i [something]...?</h2>
             <br>
             <p>You are NOT allowed to redistribute this pack without my explicit permission. 
@@ -127,109 +101,20 @@
             -->
         </div>
     </section>
-
-<!-- Ad Area-->
-    <section id="ad-area-id-3" class="ad-area">
-
+    <!--Button Suggestion-->
+    <section id="button-suggestion-id" class="button-suggestion">
+        <h1>Ready to start?</h1>
+        <h2>Download the last version of MiceBlock</h2>
+        <a href="downloads.html#download-area-id">
+            <img id="nav-id-suggestion-download" 
+            class="nav-buttons-img button-shadow" 
+            src="imgs/nav-id-download-off.png" 
+            alt="Button to Download area" 
+            onmouseover="ButtonOn('nav-id-suggestion-download', 'nav-id-download')"
+            onmouseout="ButtonOff('nav-id-suggestion-download', 'nav-id-download')">
+        </a>
     </section>
-
-<!-- Download Area -->
-    <section id="download-area-id" class="download-area">
-        <h1>Downloads</h1>
-        <table class="download-options-table center-content">
-            <td>
-                <div class="download-icon-div">
-                    <img class="download-icons" 
-                    src="imgs/gold-block-render.png" 
-                    alt="Gold Block with MiceBlock texture">
-                    <h2>MiceBlock Default</h2>
-                </div>
-                <div class="download-text-div">
-                    <p>
-                        The Default MiceBlock Experience!
-                    </p>
-                </div>
-                <div class="download-button-div">
-                    <p>
-                        Last version:
-                    </p>
-                    <img id="download-button-option1" 
-                    class="download-button-images button-shadow" 
-                    src="imgs/download-button-option1-blocked.png"
-                    alt="Download Button">
-                </div>
-            </td>
-            <td>
-                <div class="download-icon-div">
-                    <img class="download-icons" 
-                    src="imgs/redstone-block-render.png" 
-                    alt="Gold Block with MiceBlock texture">
-                    <h2>MiceBlock Lite</h2>
-                </div>
-                <div class="download-text-div">
-                    <p>
-                        The Lite Version of MiceBlock
-                    </p>
-                    
-                </div>
-                <div class="download-button-div">
-                    <p>
-                        Last version:
-                    </p>
-                    <img id="download-button-option1" 
-                    class="download-button-images button-shadow" 
-                    src="imgs/download-button-option1-blocked.png"
-                    alt="Download Button">
-                </div>
-            </td>
-        </table>  
-        <div class="download-versions">
-            <h1>Versions</h1>
-            <p>All released versions:</p>
-            <button class="spoiler-button-toggle button-shadow" id="download-versions-id-button" onclick="SpoilerVersionToggle('download-versions-id')">Open</button>
-            <div style="display: none;" class="download-versions-div center-content" id="download-versions-id">
-                <h2>Default Version</h2>
-                <table>
-                    <tr>
-                        <th>Minecraft</th><th>Version</th><th>Resolution</th><th>Link</th>
-                    </tr>
-                    <tr>
-                        <td>--</td><td>--</td><td>--</td><td><a href="#">Download</a></td>
-                    </tr>
-                </table>
-                <h2>Lite Version</h2>
-                <table>
-                    <tr>
-                        <th>Minecraft</th><th>Version</th><th>Resolution</th><th>Link</th>
-                    </tr>
-                    <tr>
-                        <td>1.15.2</td><td>Alpha 0.8</td><td>16x16</td><td><a href="#">Download</a></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <!--
-        <img id="download-button-option1" 
-        class="download-button-images" 
-        src="imgs/download-button-option1-off.png"
-        alt="Download Button" 
-        onmouseover="ButtonOn('download-button-option1')"
-        onmouseout="ButtonOff('download-button-option1')">
-        -->
-    </section>
-
-    <!-- Ad Area-->
-    <section id="ad-area-id-2" class="ad-area">
-
-    </section>
-
-<!-- gallery Area-->
-    <section id="gallery-area-id" class="gallery-area">
-        
-    </section>
-
     <!-- Footer Area -->
-
     <footer>
         <a href="#header-id"><img class="mice-text-footer center-content" src="imgs/mice-text.png" alt="MiceBlocks"></a>
         <p>MiceBlock Texture Pack and MiceBlock Website by Midlou</p>
@@ -240,9 +125,9 @@
         <a href="https://github.com/Midlou" target="_blank">
             <i class="footer-icons fab fa-github fa-2x"></i>
         </a>
-        
     </footer>
     <script src="script.js"></script>
+    <script src="carousel.js"></script>
     <script src="https://kit.fontawesome.com/833adfb60e.js" crossorigin="anonymous"></script>
 </body>
 </html>
