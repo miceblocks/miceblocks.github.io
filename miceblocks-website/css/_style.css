@@ -5,7 +5,7 @@
     box-sizing: border-box;
     border: none;
     outline: none;
-    font-size: 100%;
+    font-size: 104%;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -22,6 +22,9 @@ h2 {
     font-size: 150%;
 }
 
+section {
+    background-color: #282828;
+}
 
 /* ================Universal class================*/
 .center-content {
@@ -138,7 +141,7 @@ header {
     user-select: none;
 }
   
-/* Position the "next button" to the right */
+/* Position the "prev/next button" to the left/right */
 .next {
     right: 5%;
 }
@@ -151,11 +154,11 @@ header {
 /*================Info Area================*/
 .info-area {
     color: white;
-    background-color: #282828;
     padding-bottom: 25px;
 }
 
 .info-div {
+    padding-top: 5%;
     width: 60%;
     text-align: justify;
 }
@@ -174,7 +177,6 @@ header {
 .button-suggestion {
     color: white;
     text-align: center;
-    background-color: #282828;
 }
 
 .button-suggestion img {
@@ -241,5 +243,4 @@ footer p {
         display: block;
         width: 50%;
     }
-
 }

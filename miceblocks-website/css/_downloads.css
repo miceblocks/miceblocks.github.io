@@ -1,7 +1,6 @@
 /*================Download Area================*/
 .download-area {
     color: white;
-    background-color: #282828;
     padding-top: 25px;
     text-align: center;
 }
@@ -35,7 +34,7 @@
 }
 
 .download-button-images {
-    width: 85%;
+    width: 80%;
     /*cursor: pointer;*/
 }
 

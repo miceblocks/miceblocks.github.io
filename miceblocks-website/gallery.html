@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="css/_gallery.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="imgs/gold_block.png">
+
     <!--
     <link rel="stylesheet" href="css/normalize.css">
     -->
     <title>MiceBlocks</title>
 </head>
 
-<body onload="initComparisons()">
+<body>
     <!-- Go to Top Button -->
     <a href="#header-id">
         <img id="top-arrow-id" 
@@ -62,13 +63,28 @@
     </header>
     <!-- gallery Area-->
     <section id="gallery-area-id" class="gallery-area">
-        <div class="img-comp-container">
-            <div class="img-comp-img">
-                <img src="imgs/vanilla-image1.jpg">
-            </div>
-            <div class="img-comp-img img-comp-overlay">
-                 <img src="imgs/miceblock-image1.jpg">
-            </div>
+        <h1>Screenshots</h1>
+        <div id="gallery-carousel-id" class="gallery-carousel center-content" onclick="document.getElementById('gallery-carousel-arrow-right').click();">
+            <img class="gallery-hide-image-id" src="imgs/screenshots/screenshot-1.jpg" alt="In-game screenshot of MiceBlock" >
+            <button id="gallery-carousel-arrow-right" class="gallery-prev gallery-carousel-arrows" onclick="galleryShowSlides(1, true)">&#10094;</button>
+            <button class="gallery-next gallery-carousel-arrows" onclick="galleryShowSlides(-1, true)">&#10095;</button>
+        </div>
+        <div class="gallery-image-list-div center-content">
+            <img style="opacity: 1;" class="gallery-image-list" src="imgs/screenshots/screenshot-1.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(1, false)">
+            <img class="gallery-image-list" src="imgs/screenshots/screenshot-2.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(2, false)">
+            <img class="gallery-image-list" src="imgs/screenshots/screenshot-3.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(3, false)">
+            <img class="gallery-image-list" src="imgs/screenshots/screenshot-4.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(4, false)">
+            <img class="gallery-image-list" src="imgs/screenshots/screenshot-5.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(5, false)">
+            <img class="gallery-image-list" src="imgs/screenshots/screenshot-6.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(6, false)">
+            <img class="gallery-image-list" src="imgs/screenshots/screenshot-7.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(7, false)">
+            <img class="gallery-image-list" src="imgs/screenshots/screenshot-8.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(8, false)">
+            <img class="gallery-image-list" src="imgs/screenshots/screenshot-9.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(9, false)">
+            <img class="gallery-image-list" src="imgs/screenshots/screenshot-10.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(10, false)">
+            <img class="gallery-image-list" src="imgs/screenshots/screenshot-11.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(11, false)">
+            <img class="gallery-image-list" src="imgs/screenshots/screenshot-12.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(12, false)">
+            <img class="gallery-image-list" src="imgs/screenshots/screenshot-13.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(13, false)">
+            <img class="gallery-image-list" src="imgs/screenshots/screenshot-14.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(14, false)">
+            <img class="gallery-image-list" src="imgs/screenshots/screenshot-15.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(15, false)">
         </div>
     </section>
         <!--Button Suggestion-->
