@@ -4,18 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Minecraft Resource Pack inspired by oCd Pack">
+    <meta name="description" content="Download page for Minecraft Resource Pack Miceblocks">
     <meta name="author" content="Midlou">
-    <meta name="keywords" content="Minecraft, Texture Pack, Resource Pack, 16x16">
+    <meta name="keywords" content="Minecraft, Texture Pack, Resource Pack, 16x16, Simplistic, oCd, Disco">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="css/_style.css">
     <link rel="stylesheet" href="css/_downloads.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="imgs/gold_block.png">
-    <!--
-    <link rel="stylesheet" href="css/normalize.css">
-    -->
-    <title>MiceBlocks</title>
+    <title>MiceBlocks Downloads</title>
 </head>
 
 <body>
@@ -63,54 +60,96 @@
     <!-- Download Area -->
     <section id="download-area-id" class="download-area">
     <h1>Downloads</h1>
-    <table class="download-options-table center-content">
-        <td>
-            <div class="download-icon-div">
-                <img class="download-icons" 
+
+    <table class="download-table-options center-content">
+        <tr>
+            <th class="download-table-titles">Version</th>
+            <th class="download-table-titles">Description</th>
+            <th class="download-table-titles">Mirror</th>
+        </tr>
+        <tr>
+            <td class="download-table-icon">
+                <img class="download-icon" 
                 src="imgs/gold-block-render.png" 
                 alt="Gold Block with MiceBlock texture">
-                <h2>MiceBlock Default</h2>
-            </div>
-            <div class="download-text-div">
+                <p>MiceBlock Default</p>
+            </td>
+            <td class="download-table-description">
                 <p>
-                    The Default MiceBlock Experience!
+                    The Default MiceBlock Experience! Blocks, Creatures, Items, Weapons, Tools and interface
                 </p>
-            </div>
-            <div class="download-button-div">
-                <p>
-                    Last version:
-                </p>
+            </td>
+            <td class="download-table-button">
                 <img id="download-button-option1" 
-                class="download-button-images button-shadow" 
+                class="download-button button-shadow" 
                 src="imgs/download-button-option1-blocked.png"
                 alt="Download Button">
-            </div>
-        </td>
-        <td>
-            <div class="download-icon-div">
-                <img class="download-icons" 
-                src="imgs/redstone-block-render.png" 
-                alt="Gold Block with MiceBlock texture">
-                <h2>MiceBlock Lite</h2>
-            </div>
-            <div class="download-text-div">
-                <p>
-                    The Lite Version of MiceBlock
-                </p>
-                
-            </div>
-            <div class="download-button-div">
-                <p>
-                    Last version:
-                </p>
-                <img id="download-button-option1" 
-                class="download-button-images button-shadow" 
-                src="imgs/download-button-option1-blocked.png"
-                alt="Download Button">
-            </div>
-        </td>
+            </td>
+        </tr>
     </table>
-    <h2>How to install:</h2>
+    <div class="download-versions center-content">
+        <h2>All released versions:</h2>
+        <table class="download-versions-table">
+            <!-- Lite Version -->
+            <tr>
+                <th colspan="4"><h2>Lite</h2></th>
+            </tr>
+            <tr>
+                <th>Minecraft</th>
+                <th>Release</th>
+                <th>Link</th>
+                <th>Mirror</th>
+            </tr>
+            <tr>
+                <td>1.15.2</td>
+                <td>Beta 3</td>
+                <td><a href="#">Download</a></td>
+                <td>- - -</td>
+            </tr>
+            <tr>
+                <td>- - -</td>
+                <td>- - -</td>
+                <td><a href="#">Download</a></td>
+                <td>- - -</td>
+            </tr>
+            <tr>
+                <td>- - -</td>
+                <td>- - -</td>
+                <td><a href="#">Download</a></td>
+                <td>- - -</td>
+            </tr>
+
+            <!-- Defaul Version -->
+            <tr>
+                <th colspan="4"><h2>Default</h2></th>
+            </tr>
+            <tr>
+                <th>Minecraft</th>
+                <th>Release</th>
+                <th>Link</th>
+                <th>Mirror</th>
+            </tr>
+            <tr>
+                <td>- - -</td>
+                <td>- - -</td>
+                <td><a href="#">Download</a></td>
+                <td>- - -</td>
+            </tr>
+            <tr>
+                <td>- - -</td>
+                <td>- - -</td>
+                <td><a href="#">Download</a></td>
+                <td>- - -</td>
+            </tr>
+            <tr>
+                <td>- - -</td>
+                <td>- - -</td>
+                <td><a href="#">Download</a></td>
+                <td>- - -</td>
+            </tr>
+        </table>
+    </div>
+    <h1>How to install</h1>
     <br>
     <div class="info-howtoinstall center-content">
         <ol>
@@ -129,40 +168,6 @@
             <li>You can see more details <a href="https://minecraft.gamepedia.com/Tutorials/Loading_a_resource_pack" target="_blank"><b>Here</b></a> (Minecraft Wikipedia).</li>
         </ul>
     </div>
-    <div class="download-versions">
-        <h1>Versions</h1>
-        <p>All released versions:</p>
-        <button class="spoiler-button-toggle button-shadow" id="download-versions-id-button" onclick="SpoilerVersionToggle('download-versions-id')">Open</button>
-        <div style="display: none;" class="download-versions-div center-content" id="download-versions-id">
-            <h2>Default Version</h2>
-            <table>
-                <tr>
-                    <th>Minecraft</th><th>Version</th><th>Resolution</th><th>Link</th>
-                </tr>
-                <tr>
-                    <td>--</td><td>--</td><td>--</td><td><a href="#">Download</a></td>
-                </tr>
-            </table>
-            <h2>Lite Version</h2>
-            <table>
-                <tr>
-                    <th>Minecraft</th><th>Version</th><th>Resolution</th><th>Link</th>
-                </tr>
-                <tr>
-                    <td>1.15.2</td><td>Alpha 0.8</td><td>16x16</td><td><a href="#">Download</a></td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <!--
-    <img id="download-button-option1" 
-    class="download-button-images" 
-    src="imgs/download-button-option1-off.png"
-    alt="Download Button" 
-    onmouseover="ButtonOn('download-button-option1')"
-    onmouseout="ButtonOff('download-button-option1')">
-    -->
-    
     </section>
     <!--Button Suggestion-->
     <section id="button-suggestion-id" class="button-suggestion">

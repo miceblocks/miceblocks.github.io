@@ -8,7 +8,7 @@ var slideTimerVar;
 
 function GallerySlideTimer() {
   slideTimerVar = setTimeout(function(){
-    arrowsId[0].click();
+    arrowsId[1].click();
     GallerySlideTimer();
   }, 6000);
 }

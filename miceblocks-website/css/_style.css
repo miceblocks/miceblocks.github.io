@@ -16,7 +16,7 @@ h1 {
     text-align: center;
     width: 100%;
     font-size: 250%;
-    margin-bottom: 15px;
+    padding-top: 15px;
 }
 h2 {
     font-size: 150%;
@@ -47,8 +47,10 @@ section {
 
 /* ================Spoiler Buttons================ */
 .spoiler-button-toggle {
-    padding: 10px;
-    margin: 25px;
+    padding: 20px;
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-top: 25px;
     color: white;
     background: #4e4e4e;
     cursor: pointer;
@@ -161,11 +163,6 @@ header {
     padding-top: 5%;
     width: 60%;
     text-align: justify;
-}
-
-.info-howtoinstall {
-    text-align: justify;
-    width: fit-content;
 }
 
 .info-div h2 {

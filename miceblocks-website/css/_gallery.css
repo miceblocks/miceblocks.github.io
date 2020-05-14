@@ -1,13 +1,13 @@
 /*================Gallery Area================*/
 .gallery-area {
   color: white;
-  padding-top: 5%;
+  padding-top: 1%;
   padding-bottom: 5%;
 }
 
 .gallery-carousel {
   transition: 1s;
-  width: 60%;
+  width: 75%;
   background: url('../imgs/screenshots/screenshot-1.jpg') no-repeat;
   background-position: center;
   background-size: contain;
@@ -54,7 +54,7 @@
 .gallery-image-list-div {
   cursor: pointer;
   text-align: center;
-  width: 60%;
+  width: 75%;
   margin-top: 4px;
   /*border: 2px solid #ff0000;*/
 }
