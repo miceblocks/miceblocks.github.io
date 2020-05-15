@@ -204,11 +204,11 @@ footer {
 footer a {
     color: white;
     font-weight: bold;
-    font-size: .8em;
+    font-size: 1em;
 }
 footer p {
-    font-weight: bold;
-    font-size: 110%;
+    margin-top: 10px;
+    font-size: 100%;
 }
 
 /* ================Mobile Devices================ */
