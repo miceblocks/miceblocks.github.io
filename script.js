@@ -1,3 +1,8 @@
+/* Transitions Only After Page Load */
+function onLoadTransitions() {
+  var element = document.body;
+  element.classList.remove("preload");
+}
 
 /*================Universal Button Mouse in/out================*/
 function ButtonOn(id, name) {
