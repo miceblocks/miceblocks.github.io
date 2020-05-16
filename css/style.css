@@ -5,7 +5,7 @@
     box-sizing: border-box;
     border: none;
     outline: none;
-    font-size: 104%;
+    font-size: 100%;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -22,6 +22,7 @@ h2 {
 }
 
 section {
+    padding-bottom: 25px;
     background-color: #282828;
 }
 
@@ -84,7 +85,7 @@ header {
     /*margin-bottom: 25px;*/
 }
 
-.logo_img {
+.logo-img {
     display: block;
     width: 60%;
 }
@@ -155,12 +156,11 @@ header {
 /*================Info Area================*/
 .info-area {
     color: white;
-    padding-bottom: 25px;
 }
 
 .info-div {
-    padding-top: 5%;
-    width: 60%;
+    font-size: 115%;
+    width: 70%;
     text-align: justify;
 }
 
@@ -212,16 +212,24 @@ footer p {
 }
 
 /* ================Mobile Devices================ */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
+    /* ================Universal================ */
+    h1 {
+        font-size: 175%;
+    }
+    h2 {
+        font-size: 125%;
+    }
     /* ================Go To Top Button================ */
     #top-arrow-id {
         width: 0;
     }
     /* ================Header================ */
-
-    img.mice-text {width: 80%;}
+    .logo-img {
+        width: 90%;
+    }
     /*================Menu================*/
-    .nav-buttons img {width: 30%;}
+    .nav-buttons img {width: 50%;}
 
     /*================Carousel================*/
     .prev, .next {
@@ -234,9 +242,14 @@ footer p {
         width: 90%;
     }
 
+    /* ================Button Suggestion================ */
+    .button-suggestion img {
+        width: 50%;
+    }
+
     /* ================Footer================ */
     .mice-text-footer {
         display: block;
-        width: 50%;
+        width: 90%;
     }
 }
