@@ -29,13 +29,13 @@ function showSlides(n) {
     slideIndex = 3;
   }
   if(slideIndex == 1) {
-    headerId.style.backgroundColor = "#8aacff";
-    headerNavId.style.backgroundColor = "#8aacff";
+    headerId.style.backgroundColor = "#80a8ff";
+    headerNavId.style.backgroundColor = "#80a8ff";
     imageId.style.backgroundImage = "url('imgs/background-main.jpg')";
   }
   else if(slideIndex == 2) {
-    headerId.style.backgroundColor = "#4f659b";
-    headerNavId.style.backgroundColor = "#4f659b";
+    headerId.style.backgroundColor = "#7a9ced";
+    headerNavId.style.backgroundColor = "#7a9ced";
     imageId.style.backgroundImage = "url('imgs/background1.jpg')";
   }
   else if(slideIndex == 3) {

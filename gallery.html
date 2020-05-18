@@ -71,10 +71,10 @@
     <!-- gallery Area-->
     <section id="gallery-area-id" class="gallery-area">
         <h1>Screenshots</h1>
-        <div id="gallery-carousel-id" class="gallery-carousel center-content" onclick="document.getElementById('gallery-carousel-arrow-right').click();">
+        <div id="gallery-carousel-id" class="gallery-carousel center-content" onclick="document.getElementById('gallery-carousel-arrow-left').click();">
             <img class="gallery-hide-image-id" src="imgs/screenshots/screenshot-1.jpg" alt="In-game screenshot of MiceBlock" >
             <button id="gallery-carousel-arrow-right" class="gallery-prev gallery-carousel-arrows" onclick="galleryShowSlides(-1, true)">&#10094;</button>
-            <button class="gallery-next gallery-carousel-arrows" onclick="galleryShowSlides(1, true)">&#10095;</button>
+            <button id="gallery-carousel-arrow-left" class="gallery-next gallery-carousel-arrows" onclick="galleryShowSlides(1, true)">&#10095;</button>
         </div>
         <div class="gallery-image-list-div center-content">
             <img style="opacity: 1;" class="gallery-image-list" src="imgs/screenshots/screenshot-1.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(1, false)">
