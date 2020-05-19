@@ -241,12 +241,6 @@ footer p {
     /*================Menu================*/
     .nav-buttons img {width: 50%;}
 
-    /*================Carousel================*/
-    .prev, .next {
-        top: 30%;
-        font-size: 100%;
-    }
-
     /* ================Info Area================ */
     .info-div {
         width: 90%;
