@@ -31,8 +31,15 @@ h2 {
 
 section {
     padding-bottom: 25px;
-    background-color: #282828;
+    padding-top: 25px;
 }
+
+body {
+    background: #171717 url("../imgs/background-main-2.jpg") no-repeat fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
 
 /* ================Universal class================*/
 .center-content {
@@ -45,7 +52,7 @@ section {
 }
 
 .button-shadow:hover {
-    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
 }
 
 .link-icon {
@@ -87,7 +94,6 @@ section {
 /*================Header================*/
 header {
     transition: 1s;
-    background: #80a8ff;
     padding-bottom: 2%;
     text-align: center;
     /*margin-bottom: 25px;*/
@@ -101,7 +107,6 @@ header {
 /*================Menu================*/
 .nav-buttons {
     transition: 1s;
-    background: #80a8ff;
     padding: 5px;
 }
 
@@ -111,32 +116,64 @@ header {
     width: 20%;
 }
 
-/*================Carousel================*/
-.carousel-images {
-    position: relative;
-    background: url('../imgs/background-main.jpg'); 
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 0;
-    padding-top: 37.5%;
-}
-
 /*================Info Area================*/
 .info-area {
+    box-shadow: 0px 0px 10px black;
     color: white;
+    width: 85%;
+    background-color: #282828;
 }
 
 .info-div {
-    font-size: 115%;
-    width: 70%;
+    width: 90%;
     text-align: justify;
 }
 
-.info-div h2 {
-    margin-top: 25px;
-    font-size: 110%;
+.info-block {
+    width: 100%;
 }
+
+.info-block:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.square-preview {
+    width: 100%;
+}
+
+/* Blocks */
+.info-block-1, .info-block-2, .info-block-3 {
+    font-size: 130%;
+    float: left;
+}
+
+.info-block-image-1, .info-block-image-2, .info-block-image-3  {
+    width: 25%;
+}
+
+.info-block-text-1, .info-block-text-2, .info-block-text-3 {
+    padding: 5% 0px 5% 0px;
+}
+
+/* Block 1*/
+.info-block-text-1 {
+    margin-right: 5%;
+    width: 70%;
+}
+/* Block 2*/
+.info-block-text-2 {
+    margin-left: 5%;
+    width: 70%;
+}
+
+/* Block 3*/
+.info-block-text-3 {
+    margin-right: 5%;
+    width: 70%;
+}
+
 
 /*================Suggestion Button================*/
 .button-suggestion {
@@ -199,6 +236,9 @@ footer p {
     }
     /*================Menu================*/
     .nav-buttons img {width: 50%;}
+    .info-area {
+        width: 95%;
+    }
 
     /* ================Info Area================ */
     .info-div {
@@ -214,5 +254,20 @@ footer p {
     .mice-text-footer {
         display: block;
         width: 90%;
+    }
+}
+@media only screen and (max-width: 950px) {
+    /*================Info Area================*/
+    /* Blocks */
+    .info-block-image-1, .info-block-image-2, .info-block-image-3  {
+        display: none;
+    }
+
+    .info-block-text-1, .info-block-text-2, .info-block-text-3 {
+        font-size: 100%;
+        margin: 0;
+        margin-bottom: 25px;
+        width: 100%;
+        padding: 0;
     }
 }

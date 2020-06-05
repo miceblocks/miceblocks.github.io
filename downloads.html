@@ -58,7 +58,7 @@
                 onmouseover="ButtonOn('nav-id-download', 'nav-id-download')"
                 onmouseout="ButtonOff('nav-id-download', 'nav-id-download')">
             </a>
-            <a href="gallery.html#gallery-area-id">
+            <a href="gallery.html">
                 <img id="nav-id-gallery" 
                 class="nav-buttons-img button-shadow" 
                 src="imgs/nav-id-gallery-off.png" 
@@ -70,24 +70,18 @@
     </header>
 
     <!-- Download Area -->
-    <section id="download-area-id" class="download-area">
-        <h1>Downloads</h1>
-        <div class="download-options-area center-content"> 
-            <!-- Lite Version -->
-            <div class="download-options center-content">
-                <table class="download-options-table">
+    <section id="download-area-id" class="download-area center-content">
+        <div class="download-options center-content">
+            <div class="download-main center-content">
+                <table class="download-main-table center-content">
                     <tr>
                         <th colspan="3">
                             <h1>
-                                <img style="float: left;" 
-                                class="download-icon" 
-                                src="imgs/gold-block-render.png" 
-                                alt="Gold Block with MiceBlock texture">
+                                <img style="float: left;" class="download-icon" src="imgs/gold-block-render.png"
+                                    alt="Gold Block with MiceBlock texture">
                                 Last Release
-                                <img style="float: right;" 
-                                class="download-icon" 
-                                src="imgs/gold-block-render.png" 
-                                alt="Gold Block with MiceBlock texture">
+                                <img style="float: right;" class="download-icon" src="imgs/gold-block-render.png"
+                                    alt="Gold Block with MiceBlock texture">
                             </h1>
                         </th>
                     </tr>
@@ -102,76 +96,88 @@
                     <tr>
                         <th>Minecraft</th>
                         <th>Link</th>
-                        <th>Release DD/MM/YYYY</th>
+                        <th>Release DD / MM / YYYY</th>
                     </tr>
                     <tr>
-                        <td>
+                        <td style="width: 25%;">
                             <h2>1.16</h2>
                         </td>
-                        <td>
-                            <a href="http://adfoc.us/51312374916852">
-                                <img id="download-button-id" class="download-button button-shadow"
+                        <td style="width: 50%;">
+                            <a href="http://adfoc.us/51312374948499">
+                                <img id="download-button-id" class="download-button button-shadow center-content"
                                     src="imgs/nav-id-download-off.png" alt="Download Button"
                                     onmouseover="ButtonOn('download-button-id', 'nav-id-download')"
                                     onmouseout="ButtonOff('download-button-id', 'nav-id-download')">
                             </a>
+                            <a href="http://adfoc.us/51312374948499"><img class="download-button-versions download-button-square-size center-content" src="imgs/arrow-top.png" alt="Download Button">
                         </td>
-                        <td>
-                            <h2>02/06/2020</h2>
+                        <td style="width: 25%;">
+                            <p>05 / 06 / 2020</p>
                         </td>
                     </tr>
                 </table>
             </div>
+            <!-- Download Versions-->
+            <div id="download-versions-div" class="scroll-style download-versions center-content">
+                <table class="download-versions-table">
+                    <tr>
+                        <th colspan="4">
+                            <h2>All released versions</h2>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Minecraft</th>
+                        <th>Release</th>
+                        <th>Link</th>
+                        <th>Release DD / MM / YYYY</th>
+                    </tr>
+                    <tr>
+                        <td>1.16</td>
+                        <td>Beta 1.4.1</td>
+                        <td><a href="http://adfoc.us/51312374948499"><img class="download-button-versions" src="imgs/arrow-top.png" alt="Download Button"></a></td>
+                        <td>05 / 06 / 2020</td>
+                    </tr>
+                    <tr>
+                        <td>1.16</td>
+                        <td>Beta 1.4</td>
+                        <td><a href="http://adfoc.us/51312374916852"><img class="download-button-versions" src="imgs/arrow-top.png" alt="Download Button"></a></td>
+                        <td>02 / 06 / 2020</td>
+                    </tr>
+                    <tr>
+                        <td>1.16</td>
+                        <td>Beta 1.3</td>
+                        <td><a href="http://adfoc.us/51312374897656"><img class="download-button-versions" src="imgs/arrow-top.png" alt="Download Button"></a></td>     
+                        <td>29 / 05 / 2020</td>
+                    </tr>
+                    <tr>
+                        <td>1.16</td>
+                        <td>Beta 1.2</td>
+                        <td><a href="http://adfoc.us/51312374882189"><img class="download-button-versions" src="imgs/arrow-top.png" alt="Download Button"></a></td>
+                        <td>27 / 05 / 2020</td>
+                    </tr>
+                    <tr>
+                        <td>1.16</td>
+                        <td>Beta 1.1</td>
+                        <td><a href="http://adfoc.us/51312374818400"><img class="download-button-versions" src="imgs/arrow-top.png" alt="Download Button"></a></td>
+                        <td>25 / 05 / 2020</td>
+                    </tr>
+                    <tr>
+                        <td>1.15.2</td>
+                        <td>Beta 1.0</td>
+                        <td><a href="http://adfoc.us/5131231"><img class="download-button-versions" src="imgs/arrow-top.png" alt="Download Button"></a></td>
+                        <td>18 / 05 / 2020</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <h2 style="font-weight: 100;">Click Download, wait 6 seconds and click skip</h2>
-        <img 
-        class="how-to-install-gif" 
-        src="imgs/how-to-download.gif" alt="How to download gif">
-        <!-- Download Versions-->
-        <h1>All released versions:</h1>
-        <div id="download-versions-div" class="download-versions center-content">
-            <table class="download-versions-table">
-                <tr>
-                    <th colspan="4"><h2>Downloads</h2></th>
-                </tr>
-                <tr>
-                    <th>Minecraft</th>
-                    <th>Release</th>
-                    <th>Link</th>
-                    <th>Mirror</th>
-                </tr>
-                <tr>
-                    <td>1.16</td>
-                    <td>Beta 1.4</td>
-                    <td><a href="http://adfoc.us/51312374916852">Download</a></td>
-                    <td>- - -</td>
-                </tr>
-                <tr>
-                    <td>1.16</td>
-                    <td>Beta 1.3</td>
-                    <td><a href="http://adfoc.us/51312374897656">Download</a></td>
-                    <td>- - -</td>
-                </tr>
-                <tr>
-                    <td>1.16</td>
-                    <td>Beta 1.2</td>
-                    <td><a href="http://adfoc.us/51312374882189">Download</a></td>
-                    <td>- - -</td>
-                </tr>
-                <tr>
-                    <td>1.16</td>
-                    <td>Beta 1.1</td>
-                    <td><a href="http://adfoc.us/51312374818400">Download</a></td>
-                    <td>- - -</td>
-                </tr>
-                <tr>
-                    <td>1.15.2</td>
-                    <td>Beta 1.0</td>
-                    <td><a href="http://adfoc.us/5131231">Download</a></td>
-                    <td>- - -</td>
-                </tr>
-            </table>
-        </div>
+        <!-- How To Skip Ad-->
+        <div class="how-to-skip-ad-area center-content">
+            <h2>Click Download, wait 6 seconds and click skip</h2>
+            <img 
+            class="how-to-skip-gif" 
+            src="imgs/how-to-download.gif" 
+            alt="How to download gif">
+        </div>    
         <!-- How To Install -->
         <h1>How to install</h1>
         <br>
@@ -189,8 +195,414 @@
             <br>
             <ul>
                 <li><b>If not listed</b>, go to the main menu by pressing Esc <b>and repeat step 5)</b>.</li>
-                <li>You can see more details <a href="https://minecraft.gamepedia.com/Tutorials/Loading_a_resource_pack" target="_blank"><b>Here</b></a> (Minecraft Wikipedia).</li>
+                <li>You can see more information <a href="https://minecraft.gamepedia.com/Tutorials/Loading_a_resource_pack" target="_blank"><b>Here</b></a> (Minecraft Wikipedia).</li>
             </ul>
+        </div>
+        <!-- ChangeLog area -->
+        <h1>Changelog</h1>
+        <br>
+        <div class="scroll-style changelog-area center-content">
+            <pre>
+<h3>MiceBlocks Beta 1.4.1 [1.16 pre 2]:</h3>
+- Restored Blaze Powder icon from Brewing Stand interface
+
+<h3>MiceBlocks Beta 1.4 [20w22a]:</h3>
+- Added Jigsaw Lock texture
+- Added Respawn Anchor Bottom
+
+Interface:
+- Added Life Bars textures
+- Added Checkbox texture
+- Added Recipe Book textures
+- Added Recipe Button texture
+- Added Resource Pack Buttons textures
+- Added Book texture
+- Added Toasts textures
+- Added Advancements Widgets
+- Added Advancements Window
+- Added Stats Icons textures
+- Added Anvil Interface texture
+- Added Inventory Interface texture
+- Added Beacon Interface texture
+- Added Blast Furnace Interface texture
+- Added Furnace Interface texture
+- Added Smoker Interface texture
+- Added Brewing Stand Interface texture
+- Added Cartography Table Interface texture
+- Added Crafting Table Interface texture
+- Added Dispenser Interface texture
+- Added Enchanting Table texture
+- Added Generic Interface texture
+- Added Grindstone Interface texture
+- Added Hopper Interface texture
+- Added Horse Interface texture
+- Added Loom Interface texture
+- Added Shulker Box Interface texture
+- Added Smithing Table Interface texture
+- Added Stonecutter Interface texture
+- Added Villager Interface texture
+- Added Creative Inventory Interface texture
+- Added Creative Inventory Search Interface texture
+- Added Creative Inventory Tab Interface texture
+- Added Creative Inventory Search Tab interface
+
+- Added Empty Slot Armor textures
+
+- Updated Bone Block texture
+- Updated Furnace ON texture
+- Updated Brewing Stand texture
+
+<h3>MiceBlocks Beta 1.3 [20w22a]:</h3>
+- Added Fire Particle texture
+- Added Soul Fire Particle texture
+- Added Lava Particle texture
+- Added Angry Particle texture
+- Added Big Smoke Particle textures... follow the damn train CJ!
+- Added Bubble Particle textures
+- Added Generic Particle texture
+- Added Heart Particle texture
+- Added Damage Particle texture
+- Added Nautilus Particle texture
+- Added Critical Hit Particle texture
+- Added Effect Particle texture
+- Added Glitter Particle texture
+- Added Glint Particle texture
+- Added Note Particle texture
+- Added Drip Particle textures
+- Added Splash Particle textures
+- Added Spark Particle texture
+- Added Spell Particle texture
+- Added Explosion Particle texture
+- Added Sweep Particle texture
+- Added Soul Particle texture
+
+- Updated Texture Thumbnail
+- Updated Redstone Dust texture
+
+<h3>MiceBlocks Beta 1.2 [20w21a]:</h3>
+- Added Resistance Effect texture
+- Added Luck Effect texture
+- Added Absorption Effect texture
+- Added Fire Resistance Effect texture
+- Added Regeneration Effect texture
+- Added Bad Omen Effect texture
+- Added Blindness Effect texture
+- Added Hero Of The Village Effect texture
+- Added Glowing Effect texture
+- Added Water Breathing Effect texture
+- Added Levitation Effect texture
+- Added Invisibility Effect texture
+- Added Health Boost Effect texture
+- Added Instant Health Effect texture
+- Added Instant Damage Effect texture
+- Added Wither Effect texture
+- Added Saturation Effect texture
+- Added Hunger Effect texture
+- Added Jump Boost Effect texture
+- Added Poison Effect texture
+- Added Unluck Effect texture
+- Added Dolphins Grave Effect texture
+- Added Nausea Effect texture
+- Added Night Vision Effect texture
+- Added Slow Falling Effect texture
+- Added Haste Effect texture
+- Added Mining Fatigue Effect texture
+- Added Conduit Power Effect texture
+- Added Speed Effect texture
+- Added Slowness Effect texture
+- Added Strengh Effect texture
+- Added Weakness Effect texture
+
+- Updated Food Icons
+
+<h3>MiceBlocks Beta 1.1 [20w21a]:</h3>
+- Added Crying Obsidian texture
+- Added Ancient Debris texture
+- Added Chain texture
+- Added Shroomlight texture
+- Added Target Block texture
+- Added Lodestone texture
+- Added Respawn Anchor texture
+- Added Quartz Brick texture
+- Added Crimson Sign texture
+- Added Warped Sign texture
+
+- Added Netherite Block texture
+- Added Nether Gold Ore texture
+- Added Basalt texture
+- Added Polished Basalt texture
+
+- Added Blackstone texture
+- Added Chiseled Polished Blackstone texture
+- Added Polished Blackstone Bricks texture
+- Added Cracked Polished Blackstone Bricks texture
+- Added Gilted Blackstone texture
+- Added Polished Blackstone texture
+
+- Added Cracked Nether Brick texture
+- Added Chiseled Nether Brick texture
+
+- Added Soul Soil texture
+- Added Soul Torch texture
+- Added Soul Campfire texture
+- Added Soul Lantern
+
+- Added Warped Nylium texture
+- Added Twisting Plant texture
+- Added Warped Plank texture
+- Added Warped Roots texture
+- Added Warped Roots texture
+- Added Warped Fungus texture
+- Added Warped Door texture
+- Added Warped Trapdoor texture
+- Added Stripped Warped stem texture
+- Added Warped Stem texture
+- Added Warped Wart Block texture
+- Added Nether Sprout texture
+
+- Added Crimson Nylium texture
+- Added Weeping Plant texture
+- Added Crimson Plank texture
+- Added Crimson Fungus texture
+- Added Crimson Roots texture
+- Added Crimson Roots Pot texture
+- Added Crimson Door texture
+- Added Crimson Trapdoor texture
+- Added Stripped Crimson Stem texture
+- Added Crimson Stem texture
+
+- Updated Nether Brick texture
+- Updated Texture Pack Thumbnail
+
+<h3> MiceBlocks Beta 1.0:</h3>
+- Updated Texture Pack Thumbnail
+- Updated Kebab Painting texture
+
+<h2>Unreleased versions</h2>
+<h3>MiceBlocks Alpha 0.22:</h3>
+- Added Bed textures
+- Added Sign textures
+
+- Updated Birch Plank texture
+- Updated Dark Oak Plank texture
+- Updated Jungle Plank texture
+- Updated Oak Plank texture
+- Updated Spruce Plank texture
+
+<h3>MiceBlocks Alpha 0.21:</h3>
+- Updated Grass texture
+- Updated Tall grass texture
+- Updated Emerald Ore texture
+
+<h3>MiceBlocks Alpha 0.20:</h3>
+- Added Menu Panorama Background texture
+- Added Advancements Background textures
+
+- Updated Beacon texture
+- Updated Texture Pack Description
+- Updated Interface Buttons
+- Updated All Sand block textures
+- Updated Oxeye Daisy texture
+- Updated Cornflower texture
+- Updated All Rail textures
+- Updated Cobblestone texture
+- Updated Mossy Cobblestone texture
+- Updated Mossy Stone Brick texture
+- Updated Emerald Block texture
+- Updated Diamond Block texture
+- Updated Diamong Ore texture
+- Updated Lapis Block texture
+- Updated Lapis Ore texture
+- Updated Gold Block texture
+- Updated Gold Ore texture
+- Updated Iron Ore texture
+- Updated Iron Block texture
+- Updated Coal Block texture
+- Updated Coal Ore texture
+
+<h3>MiceBlocks Alpha 0.19:</h3>
+- Added Chest textures
+- Added End Chest texture
+
+
+<h3>MiceBlocks Alpha 0.18:</h3>
+- Added Sun texture
+- Added Painting texture
+
+- Updated Grass texture
+
+<h3>MiceBlocks Alpha 0.17:</h3>
+- Added Bookshelf variants
+
+- Updated Icon textures
+- Updated Enchant Glint texture
+- Updated Bookshelf texture
+- Updated Crafting Table
+- Updated Dead Bush texture
+
+<h3>MiceBlocks Alpha 0.16:</h3>
+- Added Terracotta textures
+- Added Concrete Powder textures
+- Added Glass textures
+- Added Glass Panel textures
+- Added Sea Pickle texture
+- Added Shulker Box textures
+- Added Shulker Mob textures
+- Added Jigsaw texture
+- Added Structure Block texture
+- Added Dragon Egg texture
+- Added Icon textures
+
+<h3>MiceBlocks Alpha 0.15:</h3>
+- Added Command Block textures
+- Added Repeater texture
+- Added Comparator texture
+- Added Lever texture
+- Added Daylight Detector texture
+- Added Sponge texture
+- Added Wet Sponte texture
+- Added Lectern texture
+- Added Dead Bush texture
+- Added Melon Stem texture
+- Added Pumpkin Stem texture
+- Added Melon texture
+- Added Sweet Berry Bush texture
+- Added Conduit texture
+- Added Campfire texture
+
+- Updated Dispenser texture
+- Updated Dropper texture
+- Updated Pumpkin texture
+- Updated Lily Pad texture
+
+<h3>MiceBlocks Alpha 0.14:</h3>
+- Added Dried Help Block texture
+- Added Lily Pad texture
+- Added Sunflower texture
+- Added Rose Bush texture
+- Added Lilac texture
+- Added Peony texture
+- Added Lantern texture
+- Added Sea Lantern texture
+- Added Prismarine Bricks texture
+- Added Dark Prismarine texture
+- Added Item Frame texture
+- Added Purpur Block texture
+- Added Purpur Pillar texture
+- Added Cocoa texture
+
+- Updated Ladder texture
+- Updated Piston texture
+- Updated Cobweb texture
+- Updated Chiseled Stone Brick texture
+
+<h3>MiceBlocks Alpha 0.13:</h3>
+- Added Fletching Table texture
+- Added Loom texture
+- Added Smithing Table texture
+- Added Magma Block texture
+- Added Note Block texture
+- Added Snow texture
+- Added Jukebox texture
+- Added Flower Pot texture
+- Added Blue Orchid texture
+- Added Orange Tulip texture
+- Added Pink Tulip texture
+- Added Red Tulip texture
+- Added White Tulip texture
+- Added Oxeye Daisy texture
+- Added Cornflower texture
+- Added Lili of the Valley texture
+- Added Wither Rose texture
+- Added Dark Oak Sapling texture
+- Added Jungle Sapling texture
+- Added Oak sapling texture
+- Added Spruce Sapling texture
+- Added Fern texture
+- Added Large Fern texture
+- Added Hay Block texture
+- Added Tripwire texture
+- Added Tripwire Hook texture
+
+- Updated Grass Block Snow texture
+- Updated Birch Plank texture
+- Updated Block of Quartz texture
+- Updated Chiseled Quartz Block texture
+- Updated Azire Bluet texture
+- Updated Acacia Sapling texture
+- Updated Birch Sapling
+- Updated Barrel texture
+
+<h3>MiceBlocks Alpha 0.12:</h3>
+- Added Dark Oak Log texture
+- Added Stripped Dark Oak Log texture
+- Added Jungle Oak Log texture
+- Added Stripped Oak Log texture
+- Added Spruce Log Texture
+- Added Stripped Dark Oal Log texture
+- Added Stripped Acacia Oak Log texture
+- Added Composter texture
+- Added Stonecutter texture
+- Added Grindstone texture
+
+- Updated Acacia Oak Log texture
+
+<h3>MiceBlocks Alpha 0.11:</h3>
+- Added Beetroots texture
+- Added Wheat texture
+- Added Carrot texture
+- Added Enchanted Glint texture
+- Added Cauldron texture
+- Added Hopper texture
+- Added Coral textures
+- Added Honey Block texture
+- Added Honeycomb texture
+- Added Chorus Plant texture
+- Added End Stone texture
+- Added End Portal Frame texture
+- Added End Stone Bricks texture
+- Added End Rod texture
+
+- Updated Crafting Table texture
+- Updated Bamboo texture
+- Updated GUI textures
+<h3>MiceBlocks Alpha 0.10:</h3>
+- Added Brick variants
+- Added Smoker texture
+- Added Bee Nest texture
+- Added Bee Hive texture
+
+- Updated Furnace texture
+- Updated Blast Furnace texture
+- Updated thumbnail (pack.png) texture
+- Updated Anvil texture
+- Updated Piston texture
+- Updated Sticky Piston texture
+
+<h3>MiceBlocks Alpha 0.9:</h3>
+- Started GUI Textures
+
+- Added Buttons Textures
+
+- Updated thumbnail (pack.png) PNG properties: Removed raw data (metadata) (5kb to 2kb).
+- Updated Moon Phases PNG properties
+
+<h3>MiceBlocks Alpha 0.8:</h3>
+- Updated ALL PNG properties: Removed raw data (metadata) from PNG files (2kb to 200 bytes per texture).
+
+<h3>MiceBlocks Alpha 0.7:</h3>
+- Updated Obsidian PNG properties
+- Updated Leaves Textures
+- Updated Leaves PNG properties
+- Updated Poppy PNG properties
+- Updated Texture Pack description
+
+<h3>MiceBlocks Alpha 0.6:</h3>
+- Added Poppy
+- Added Dandelion
+- Edited Allium
+- Edited Azure Bluet
+            </pre>
         </div>
     </section>
 

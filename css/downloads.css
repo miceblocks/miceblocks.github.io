@@ -1,46 +1,67 @@
+/* Universal */
+/* Scrollbar settings */
+.scroll-style::-webkit-scrollbar {
+    width: 18px;
+}
+  
+.scroll-style::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+.scroll-style::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.scroll-style::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 /*================Download Area================*/
 .download-area {
+    width: 85%;
+    background-color: #282828;
+    box-shadow: 0px 0px 10px black;
     color: white;
     padding-top: 25px;
     text-align: center;
 }
 
-.how-to-install-gif {
-    width: 40%;
-    border: 4px solid #1f1f1f;
-}
-
-/* Download Options Table */
-.download-options-area {
-    width: 90%;
-    margin-bottom: 25px;
-}
-
 .download-options {
-    display: inline-block;
-    overflow: auto;
-    max-width: 600px;
+    float: none;
+    width: 95%;
 }
 
-.download-options-table td, 
-.download-options-table th {
+/* Download Main Table */
+.download-main {
+    overflow: auto;
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+
+.download-main-table {
+    height: 100%;
+}
+
+.download-main-table td, 
+.download-main-table th {
     border: 4px solid #1f1f1f;
     font-size: 100%;
     padding: 8px;
     margin: 0%;
 }
 
-.download-options-table th {
-    width: 33.3%;
+.download-main-table th {
+    /*width: 33.3%;*/
     text-decoration: none;
     background-color: #1f1f1f;
 }
 
-.download-options-table td {
+.download-main-table td {
     background-color: #2c2c2c;
 }
 
-.download-options-table p {
+.download-main-table p {
     font-size: 125%;
     text-align: center;
 }
@@ -51,24 +72,43 @@
 }
 
 .download-button {
+    display: block;
     width: 100%;
     max-width: 256px;
     min-width: 128px;
-
+}
+.download-button-square-size {
+    width: 48px;
+    display: none;
 }
 
 /* Download Versions */
 .download-versions {
+    float: left;
     font-size: 120%;
-    height: 320px;
+    height: 400px;
     overflow: auto;
-    width: 70%;
+    width: 50%;
     /*border: 4px solid #1f1f1f;*/
+}
+
+.download-button-versions {
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    width: 48px;
+}
+.download-button-versions:hover {
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
 }
 
 /* Versions Table */
 .download-versions-table {
+    /*position: relative;*/
     text-align: left;
+    height: 100%;
     width: 100%;
 }
   
@@ -79,32 +119,28 @@
 }
 
 .download-versions-table th {
+    /*position: sticky;
+    top: 0;*/
     text-decoration: none;
     background-color: #1f1f1f;
 }
 
 .download-versions-table td {
-    padding: 10px;
+    padding: 5px;
 }
 .download-versions-table tr:nth-child(even) {
     background-color: #2c2c2c;
 }
 
-/* Scrollbar settings */
-.download-versions::-webkit-scrollbar {
-    width: 15px;
-}
-  
-.download-versions::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-  
-.download-versions::-webkit-scrollbar-thumb {
-    background: #888;
+/* How to Skip Ad area*/
+.how-to-skip-ad-area {
+    display: block;
+    width: 100%;
 }
 
-.download-versions::-webkit-scrollbar-thumb:hover {
-    background: #555;
+.how-to-skip-gif {
+    width: 40%;
+    border: 4px solid #1f1f1f;
 }
 
 /* How to Install Tutorial */
@@ -114,46 +150,107 @@
     width: fit-content;
 }
 
+/* ChangeLog area */
+.changelog-area {
+    font-size: 125%;
+    border: 5px solid #292929;
+    padding: 8px;
+    background-color: #303030;
+    width: 95%;
+    height: 400px;
+    overflow: auto;
+    text-align: left;
+}
+.changelog-area pre {
+    white-space: pre-wrap;
+}
+
 /* ================Mobile Devices================ */
 @media only screen and (max-width: 600px) {
     /* ================Download Area================ */
-    .download-options {
-        max-width: 100%;
+    .download-area {
+        width: 95%;
     }
-    
-    .download-options-table td {
+    .download-main-table td {
         font-size: 60%;
         padding: 4px;
     }
-    .download-options-table th {
+    .download-main-table th {
         font-size: 80%;
         padding: 4px;
     }
 
-    .download-options-table p {
+    .download-main-table p {
         font-size: 175%;
     }
+    .download-icon {
+        vertical-align: middle;
+        width: 48px;
+    }
 
-    .how-to-install-gif {
-        width: 60%;
+    .how-to-skip-gif {
+        width: 80%;
+    }
+    /* ================Download Area================ */
+    .download-button-square-size {
+        display: block;
+    }
+    .download-button {
+        display: none;
     }
     /* ================Download Versions================ */
-    .download-versions {
-        width: 90%;
+    .download-versions-table {
+        border-collapse: collapse;
     }
-
+    
     .download-versions-table td, 
     .download-versions-table th {
-        font-size: 100%;
-        padding: 2px;
+        border: 0px solid #1f1f1f;
+        font-size: 80%;
+    }
+
+    .download-versions-table th {
+        padding: 4px;
     }
 
     .download-versions-table td {
-        padding: 10px;
+        padding: 2px;
     }
+    /* ================How To Install================ */
+    .info-howtoinstall  {
+        font-size: 100%;
+    }
+    /* ================Changelog Area================ */
+    .changelog-area {
+        font-size: 100%;
 
+    }
+}
+@media only screen and (max-width: 900px) {
     /* ================How To Install================ */
     .info-howtoinstall  {
         width: 85%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    /* ================Download Area================ */
+    .download-options {
+        width: 95%;
+    }
+
+    .download-main {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: 90%;
+    }
+    /* ================Download Versions================ */
+    .download-versions {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+        width: 90%;
     }
 }
