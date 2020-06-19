@@ -8,7 +8,7 @@
 }
 
 .gallery-carousel {
-  transition: 1s;
+  transition: .3s;
   width: 75%;
   background: url('../imgs/screenshots/screenshot-1.jpg') no-repeat;
   background-position: center;
@@ -22,7 +22,7 @@
 }
 
 /* Next & previous buttons */
-.gallery-carousel-arrows:hover {
+.gallery-carousel-arrows:hover, .gallery-carousel-arrows:focus {
   transition: .2s;
   background: rgba(0, 0, 0, .2);
   cursor: pointer;
@@ -64,7 +64,12 @@
   transition: .5s;
   opacity: .2;
   margin: 2px;
-  width: 25%;
+  width: 15%;
+}
+
+.gallery-image-list:focus {
+  transition: 0s;
+  border: 2px solid #ffffff;
 }
 
 /* ================Mobile Devices================ */
@@ -81,7 +86,7 @@
     width: 90%;
   }
   .gallery-image-list {
-    width: 25%;
+    width: 20%;
   }
   .gallery-image-list-div {
     width: 90%;

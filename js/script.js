@@ -1,3 +1,6 @@
+/*================Universal var================*/
+var i;
+
 /* Transitions Only After Page Load */
 function onLoadTransitions() {
   var element = document.body;
@@ -13,18 +16,6 @@ function ButtonOn(id, name) {
 function ButtonOff(id, name) {
   var image = document.getElementById(id);
   image.src = "imgs/" + name + "-off.png";
-}
-
-/*================Universal Spoiler Area================*/
-function SpoilerVersionToggle(name) {
-  var x = document.getElementById(name);
-  if (x.style.display === "none") {
-    x.style.display = "block";
-    document.getElementById(name + '-button').innerHTML = 'Close';
-  } else {
-    document.getElementById(name + '-button').innerHTML = 'Open';
-    x.style.display = "none";
-  }
 }
 
 /*================Go To Top Button================*/

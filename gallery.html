@@ -3,6 +3,7 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166798367-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -11,11 +12,14 @@
     
         gtag('config', 'UA-166798367-1');
     </script>
+
+    <script data-ad-client="ca-pub-4052688585225352" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gallery page with images of Minecraft Resource Pack Miceblocks">
+    <meta name="description" content="Gallery page with images of Minecraft Resource Pack Mice Blocks, a smooth and lite alternative to the Vanilla texture.">
     <meta name="author" content="Midlou">
-    <meta name="keywords" content="Minecraft, Texture Pack, Resource Pack, 16x16, Simplistic, oCd, Disco">
+    <meta name="keywords" content="Minecraft, Texture Pack, Resource Pack, 16x16, Simplistic, oCd, Lite, Mice Blocks, Images, Screenshots">
     <meta name="robots" content="index, follow">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/gallery.css" rel="stylesheet">
@@ -23,107 +27,114 @@
     <link rel="icon" href="imgs/gold_block.png">
     <link rel="apple-touch-icon" href="imgs/gold_block.png">
 
-    <title>MiceBlocks Gallery</title>
+    <title>Mice Blocks Gallery</title>
 </head>
 
 <body class="preload" onload="onLoadTransitions()">
-    <!-- Go to Top Button -->
-    <a href="#header-id">
-        <img id="top-arrow-id" 
-        class="top-arrow button-shadow" 
-        src="imgs/arrow-top.png" alt="To Top Arrow" 
-        onclick="topFunction()">
-    </a>
-
     <!-- Header -->
     <header id="header-id">
-        <h1 class="logo-text link-icon">MiceBlock - A Minecraft Texture Pack</h1>
-        <a href="/">
-            <img class="logo-img center-content" src="imgs/mice-text.png" alt="MiceBlock - A Minecraft Texture Pack">
+        <h1 class="logo-text link-icon">Mice Blocks - A Minecraft Texture Pack</h1>
+        <a tabindex="-1" href="/">
+            <img class="logo-img center-content" src="imgs/mice-text.png" alt="Mice Blocks - A Minecraft Texture Pack">
         </a>
         <nav id="header-nav-id" class="nav-buttons">
-            <a href="/">
+            <a href="/" 
+            onfocus="ButtonOn('nav-id-home', 'nav-id-home')"
+            onblur="ButtonOff('nav-id-home', 'nav-id-home')"
+            onmouseover="ButtonOn('nav-id-home', 'nav-id-home')"
+            onmouseout="ButtonOff('nav-id-home', 'nav-id-home')">
                 <img id="nav-id-home" 
                 class="nav-buttons-img button-shadow" 
                 src="imgs/nav-id-home-off.png" 
                 alt="Home button" 
-                onmouseover="ButtonOn('nav-id-home', 'nav-id-home')"
-                onmouseout="ButtonOff('nav-id-home', 'nav-id-home')">
+                title="Home">
             </a>
-            <a href="downloads.html">
+            <a href="downloads.html" 
+            onfocus="ButtonOn('nav-id-download', 'nav-id-download')"
+            onblur="ButtonOff('nav-id-download', 'nav-id-download')"
+            onmouseover="ButtonOn('nav-id-download', 'nav-id-download')"
+            onmouseout="ButtonOff('nav-id-download', 'nav-id-download')">
                 <img id="nav-id-download" 
                 class="nav-buttons-img button-shadow" 
                 src="imgs/nav-id-download-off.png" 
                 alt="Button to Download area" 
-                onmouseover="ButtonOn('nav-id-download', 'nav-id-download')"
-                onmouseout="ButtonOff('nav-id-download', 'nav-id-download')">
+                title="Downloads">
             </a>
-            <a href="#gallery-area-id">
+            <a href="#gallery-area-id" 
+            onfocus="ButtonOn('nav-id-gallery', 'nav-id-gallery')"
+            onblur="ButtonOff('nav-id-gallery', 'nav-id-gallery')"
+            onmouseover="ButtonOn('nav-id-gallery', 'nav-id-gallery')"
+            onmouseout="ButtonOff('nav-id-gallery', 'nav-id-gallery')">
                 <img id="nav-id-gallery" 
                 class="nav-buttons-img button-shadow" 
                 src="imgs/nav-id-gallery-off.png" 
                 alt="Button to gallery area" 
-                onmouseover="ButtonOn('nav-id-gallery', 'nav-id-gallery')"
-                onmouseout="ButtonOff('nav-id-gallery', 'nav-id-gallery')">
+                title="Gallery">
             </a>
         </nav>
     </header>
     <!-- gallery Area-->
     <section id="gallery-area-id" class="gallery-area center-content">
         <h1>Screenshots</h1>
-        <div id="gallery-carousel-id" class="gallery-carousel center-content" onclick="document.getElementById('gallery-carousel-arrow-left').click();">
-            <img class="gallery-hide-image-id" src="imgs/screenshots/screenshot-1.jpg" alt="In-game screenshot of MiceBlock" >
+        <div id="gallery-carousel-id" class="gallery-carousel center-content">
+            <img class="gallery-hide-image-id" src="imgs/screenshots/screenshot-1.jpg" alt="In-game screenshot of Mice Blocks" >
             <button id="gallery-carousel-arrow-right" class="gallery-prev gallery-carousel-arrows" onclick="galleryShowSlides(-1, true)">&#10094;</button>
             <button id="gallery-carousel-arrow-left" class="gallery-next gallery-carousel-arrows" onclick="galleryShowSlides(1, true)">&#10095;</button>
         </div>
         <div class="gallery-image-list-div center-content">
-            <img style="opacity: 1;" class="gallery-image-list" src="imgs/screenshots/screenshot-1.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(1, false)">
-            <img class="gallery-image-list" src="imgs/screenshots/screenshot-2.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(2, false)">
-            <img class="gallery-image-list" src="imgs/screenshots/screenshot-3.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(3, false)">
-            <img class="gallery-image-list" src="imgs/screenshots/screenshot-4.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(4, false)">
-            <img class="gallery-image-list" src="imgs/screenshots/screenshot-5.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(5, false)">
-            <img class="gallery-image-list" src="imgs/screenshots/screenshot-6.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(6, false)">
-            <img class="gallery-image-list" src="imgs/screenshots/screenshot-7.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(7, false)">
-            <img class="gallery-image-list" src="imgs/screenshots/screenshot-8.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(8, false)">
-            <img class="gallery-image-list" src="imgs/screenshots/screenshot-9.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(9, false)">
-            <img class="gallery-image-list" src="imgs/screenshots/screenshot-10.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(10, false)">
-            <img class="gallery-image-list" src="imgs/screenshots/screenshot-11.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(11, false)">
-            <img class="gallery-image-list" src="imgs/screenshots/screenshot-12.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(12, false)">
-            <img class="gallery-image-list" src="imgs/screenshots/screenshot-13.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(13, false)">
-            <img class="gallery-image-list" src="imgs/screenshots/screenshot-14.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(14, false)">
-            <img class="gallery-image-list" src="imgs/screenshots/screenshot-15.jpg" alt="MiceBlock screenshot" onclick="galleryShowSlides(15, false)">
+            <img tabindex="0" style="opacity: 1;" class="gallery-image-list" src="imgs/screenshots/screenshot-1.jpg" alt="Mice Blocks screenshot" onfocus="galleryShowSlides(1, false)" onclick="galleryShowSlides(1, false)">
+            <img tabindex="0" class="gallery-image-list" src="imgs/screenshots/screenshot-2.jpg" alt="Mice Blocks screenshot" onfocus="galleryShowSlides(2, false)" onclick="galleryShowSlides(2, false)">
+            <img tabindex="0" class="gallery-image-list" src="imgs/screenshots/screenshot-3.jpg" alt="Mice Blocks screenshot" onfocus="galleryShowSlides(3, false)" onclick="galleryShowSlides(3, false)">
+            <img tabindex="0" class="gallery-image-list" src="imgs/screenshots/screenshot-4.jpg" alt="Mice Blocks screenshot" onfocus="galleryShowSlides(4, false)" onclick="galleryShowSlides(4, false)">
+            <img tabindex="0" class="gallery-image-list" src="imgs/screenshots/screenshot-5.jpg" alt="Mice Blocks screenshot" onfocus="galleryShowSlides(5, false)" onclick="galleryShowSlides(5, false)">
+            <img tabindex="0" class="gallery-image-list" src="imgs/screenshots/screenshot-6.jpg" alt="Mice Blocks screenshot" onfocus="galleryShowSlides(6, false)" onclick="galleryShowSlides(6, false)">
+            <img tabindex="0" class="gallery-image-list" src="imgs/screenshots/screenshot-7.jpg" alt="Mice Blocks screenshot" onfocus="galleryShowSlides(7, false)" onclick="galleryShowSlides(7, false)">
+            <img tabindex="0" class="gallery-image-list" src="imgs/screenshots/screenshot-8.jpg" alt="Mice Blocks screenshot" onfocus="galleryShowSlides(8, false)" onclick="galleryShowSlides(8, false)">
+            <img tabindex="0" class="gallery-image-list" src="imgs/screenshots/screenshot-9.jpg" alt="Mice Blocks screenshot" onfocus="galleryShowSlides(9, false)" onclick="galleryShowSlides(9, false)">
+            <img tabindex="0" class="gallery-image-list" src="imgs/screenshots/screenshot-10.jpg" alt="Mice Blocks screenshot" onfocus="galleryShowSlides(10, false)" onclick="galleryShowSlides(10, false)">
+            <img tabindex="0" class="gallery-image-list" src="imgs/screenshots/screenshot-11.jpg" alt="Mice Blocks screenshot" onfocus="galleryShowSlides(11, false)" onclick="galleryShowSlides(11, false)">
+            <img tabindex="0" class="gallery-image-list" src="imgs/screenshots/screenshot-12.jpg" alt="Mice Blocks screenshot" onfocus="galleryShowSlides(12, false)" onclick="galleryShowSlides(12, false)">
+            <img tabindex="0" class="gallery-image-list" src="imgs/screenshots/screenshot-13.jpg" alt="Mice Blocks screenshot" onfocus="galleryShowSlides(13, false)" onclick="galleryShowSlides(13, false)">
+            <img tabindex="0" class="gallery-image-list" src="imgs/screenshots/screenshot-14.jpg" alt="Mice Blocks screenshot" onfocus="galleryShowSlides(14, false)" onclick="galleryShowSlides(14, false)">
+            <img tabindex="0" class="gallery-image-list" src="imgs/screenshots/screenshot-15.jpg" alt="Mice Blocks screenshot" onfocus="galleryShowSlides(15, false)" onclick="galleryShowSlides(15, false)">
         </div>
     </section>
         <!--Button Suggestion-->
         <section id="button-suggestion-id" class="button-suggestion">
             <h1>Don't wait any longer!</h1>
-            <h2>Download the last version of MiceBlock</h2>
-            <a href="downloads.html#download-area-id">
+            <h2>Download the last version of Mice Blocks</h2>
+            <a href="downloads.html#download-area-id" 
+            onfocus="ButtonOn('nav-id-suggestion-download', 'nav-id-download')"
+            onblur="ButtonOff('nav-id-suggestion-download', 'nav-id-download')"
+            onmouseover="ButtonOn('nav-id-suggestion-download', 'nav-id-download')"
+            onmouseout="ButtonOff('nav-id-suggestion-download', 'nav-id-download')">
                 <img id="nav-id-suggestion-download" 
                 class="nav-buttons-img button-shadow" 
                 src="imgs/nav-id-download-off.png" 
-                alt="Button to Download area" 
-                onmouseover="ButtonOn('nav-id-suggestion-download', 'nav-id-download')"
-                onmouseout="ButtonOff('nav-id-suggestion-download', 'nav-id-download')">
+                alt="Button to Download area" >
             </a>
         </section>
         <footer>
-            <a href="#header-id"><img class="mice-text-footer center-content" src="imgs/mice-text.png" alt="MiceBlocks"></a>
-            <p>MiceBlock Texture Pack and MiceBlock Website by Midlou</p>
+            <a tabindex="-1" href="#header-id"><img class="mice-text-footer center-content" src="imgs/mice-text.png" alt="Mice Blocks logo"></a>
+            <p>Mice Blocks Texture Pack and Mice Blocks Website by Midlou</p>
             <p style="font-size: .8em;">Icons by FontAwesome</p>
-            <a href="https://steamcommunity.com/profiles/76561198062956433" target="_blank">
+            <a href="https://steamcommunity.com/profiles/76561198062956433" title="Steam Profile" target="_blank" rel="noopener">
                 <i class="footer-icons fab fa-steam fa-2x"></i>
             </a>
-            <a href="https://github.com/miceblocks/miceblocks.github.io" target="_blank">
+            <a href="https://github.com/miceblocks/miceblocks.github.io" title="Github repository" target="_blank" rel="noopener">
                 <i class="footer-icons fab fa-github fa-2x"></i>
             </a>
-            <a href="https://www.planetminecraft.com/texture-pack/mice-blocks-x16/" target="_blank" 
-            class="footer-icons fas fa-globe-americas fa-2x"></a>
-            <p>Copyright © 2020 MiceBlocks, all rights reserved.</p>
+            <a href="https://www.planetminecraft.com/texture-pack/mice-blocks-x16/" title="Planet Minecraft link" target="_blank" rel="noopener" class="footer-icons fas fa-globe-americas fa-2x"></a>
+            <p>Copyright © 2020 Mice Blocks, all rights reserved.</p>
         </footer>
-        <script data-ad-client="ca-pub-4052688585225352" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script src="script.js"></script>
-<script src="gallery.js"></script>
-<script src="https://kit.fontawesome.com/833adfb60e.js" crossorigin="anonymous"></script>
+        <a tabindex="-1" href="#header-id">
+            <img id="top-arrow-id" 
+            class="top-arrow button-shadow" 
+            src="imgs/arrow-top.png" alt="To Top Arrow" 
+            onclick="topFunction()">
+        </a>
+        <script src="js/script.js"></script>
+        <script src="js/gallery.js"></script>
+        <script src="https://kit.fontawesome.com/833adfb60e.js" crossorigin="anonymous"></script>
 </body>
 </html>

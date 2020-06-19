@@ -4,7 +4,7 @@ var arrowsId = document.getElementsByClassName("gallery-carousel-arrows");
 var imageId = document.getElementById("gallery-carousel-id");
 var imageListId = document.getElementsByClassName("gallery-image-list");
 var slideTimerVar;
-
+var zoom = false;
 
 function GallerySlideTimer() {
   slideTimerVar = setTimeout(function(){
