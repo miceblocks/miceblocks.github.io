@@ -85,6 +85,7 @@ header {
 }
 
 .logo-img {
+    /*border: 10px solid orange;*/
     display: block;
     width: 60%;
 }
