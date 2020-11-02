@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp" ng-controller="myCtrl">
 
-    <head>
+    <head id="head">
         <!-- Global site tag (gtag.js) - Google Analytics -->
 
     <!--     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166798367-1"></script>
@@ -42,54 +42,47 @@
 
     <body>
 
-        <!-- Loading screen -->
-        <div class="se-pre-con">
-            <div class="justify-content-center vertical-center">
-                <img class="loading-spinner" src="imgs/cleverson-image-256.png">
+    <!-- Loading screen -->
+    <div class="se-pre-con">
+        <div class="justify-content-center vertical-center">
+            <img class="loading-spinner" src="imgs/cleverson-image-256.png">
+        </div>
+    </div>
+
+    <!-- ParticlesJS -->
+    <div id="particles-404-js"></div>
+
+    <div class="main-content-404 container-fluid text-center text-white bottom-buffer">
+
+        <header>
+            <a href="/">
+                <img class="img-fluid mx-auto d-block miceblocks-logo-404" src="imgs/mice-text-1024x256.png" alt="Mice Blocks logo">
+            </a>
+            
+        </header>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted"><strong>The End</strong></p>
             </div>
         </div>
 
-        <!-- ParticlesJS -->
-        <div id="particles-js"></div>
-
-        <!-- Site content -->
-
-        <div class="container-fluid text-center bottom-buffer" 
-            data-parallax="scroll" 
-            data-image-src="imgs/background-miceblocks-1920x1080.png"
-            data-position-y="top"
-            data-bleed="40"
-            data-speed="0.4">
-
-            <!-- Header -->
-            <header>
-                <img class="img-fluid mx-auto d-block mice-text-top" src="imgs/mice-text-1024x256.png" alt="Mice Blocks logo">
-            </header>
-
-            <div class="row justify-content-center">
-                <div class="col-md-4 col-sm-6">
-
-                    <a class="badge badge-dark mb-3 p-2 shadow" 
-                        href="#" 
-                        data-toggle="tooltip" 
-                        title="Last version of Mice Blocks"
-                        data-placement="top">{{ downloadsList[downloadsList.length-1].version }}
-                    </a>
-
-                    <p class="lead">
-                        <a ng-href="{{ downloadsList[downloadsList.length-1].link }}" class="button-download btn btn-lg btn-block btn-success shadow disabled">Coming Soon</a>
-                    </p>
-
-                    <a class="badge badge-dark mb-3 p-2 shadow" 
-                        href="#" 
-                        data-toggle="tooltip" 
-                        title="Supported Minecraft versions"
-                        data-placement="bottom">{{ downloadsList[downloadsList.length-1].minecraft }}
-                    </a>
-
-                </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-danger display-2"><strong>Error 404!</strong></h1>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Not the kind of thing we want you to see...</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a class="btn btn-dark btn-lg m-4" href="/"><strong>Convenient exit</strong></a>
+            </div>
+        </div>
+    </div>
 
         <div id="footer"></div>
 
