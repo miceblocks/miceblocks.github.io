@@ -1,22 +1,13 @@
-<<<<<<< HEAD
-particlesJS("particles-js", {
-=======
 
 if(document.getElementById('particles-js')) {
   particlesJS("particles-js", {
->>>>>>> 092c8561377fc4b29bc5562361af7bc0435d69ce
     particles: {
       number: { value: 120, density: { enable: true, value_area: 800 } },
       color: { value: "#ffffff" },
       shape: {
         type: "edge",
         stroke: { width: 0, color: "#000000" },
-<<<<<<< HEAD
-        polygon: { nb_sides: 5 },
-        image: { src: "img/github.svg", width: 100, height: 100 }
-=======
         polygon: { nb_sides: 5 }
->>>>>>> 092c8561377fc4b29bc5562361af7bc0435d69ce
       },
       opacity: {
         value: 1,
@@ -63,9 +54,6 @@ if(document.getElementById('particles-js')) {
     },
     retina_detect: true
   });
-<<<<<<< HEAD
-  
-=======
 }
 
 if(document.getElementById('particles-404-js')) {
@@ -126,4 +114,3 @@ if(document.getElementById('particles-404-js')) {
   });
 }
 
->>>>>>> 092c8561377fc4b29bc5562361af7bc0435d69ce

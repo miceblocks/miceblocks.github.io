@@ -62,12 +62,8 @@
 
 /*========== particles.js container ==========*/
 
-<<<<<<< HEAD
-#particles-js {
-=======
 #particles-js,
 #particles-404-js {
->>>>>>> 092c8561377fc4b29bc5562361af7bc0435d69ce
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -78,15 +74,8 @@
 
 /*========== Custom CSS ==========*/
 
-<<<<<<< HEAD
-body {
-/*     background: #171717 url("../imgs/background-miceblocks-1920x1080.jpg") no-repeat fixed;
-    background-size: cover;
-    -webkit-background-size: cover; */
-=======
 .main-content-404 {
     background: rgb(0, 0, 0);
->>>>>>> 092c8561377fc4b29bc5562361af7bc0435d69ce
 }
 
 .button-download,
@@ -96,13 +85,6 @@ body {
 	font-weight: 700!important;
 }
 
-<<<<<<< HEAD
-.shadow-large {
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-}
-
-=======
->>>>>>> 092c8561377fc4b29bc5562361af7bc0435d69ce
 .background-dark {
 	background: #222;
 }
@@ -115,19 +97,11 @@ body {
 	padding-bottom: 220px; 
 }
 
-.mice-text-top {
-	/*  */
-}
-
-
 .mice-text-footer {
 	width: 50%;
 }
-<<<<<<< HEAD
-=======
 
 .miceblocks-logo-404 {
 	width: 60%;
 }
 
->>>>>>> 092c8561377fc4b29bc5562361af7bc0435d69ce
