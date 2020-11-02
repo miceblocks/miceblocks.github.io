@@ -11,7 +11,7 @@ app.controller('myCtrl', function($scope) {
         {
             "version": "A.12",
             "minecraft": "[1.13] ~ [1.16.3]",
-            "link": "#"
+            "link": "http://adfoc.us/51312375319825"
         },
     ]
 });
