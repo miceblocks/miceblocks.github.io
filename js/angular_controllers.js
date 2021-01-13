@@ -11,19 +11,19 @@ app.controller('myCtrl', function($scope) {
         {
             "version": "A.12",
             "minecraft": "[1.13] ~ [1.16.3]",
-            "link": "http://adfoc.us/51312375319825"
+            "link": "https://miceblocks.github.io/downloads/Mice%20Blocks%20vA.12.zip"
         },
 
         {
             "version": "A.12.1",
             "minecraft": "[1.13] ~ [1.16.4]",
-            "link": "http://adfoc.us/51312376464073"
+            "link": "https://miceblocks.github.io/downloads/Mice%20Blocks%20vA.12.1.zip"
         },
 
         {
             "version": "A.12.2",
             "minecraft": "[1.13] ~ [1.16.4]",
-            "link": "http://adfoc.us/51312376473206"
+            "link": "https://miceblocks.github.io/downloads/Mice%20Blocks%20vA.12.2.zip"
         },
     ]
 });
