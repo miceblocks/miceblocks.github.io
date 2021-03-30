@@ -74,6 +74,10 @@
 
 /*========== Custom CSS ==========*/
 
+body {
+	color: #222 !important;
+}
+
 .main-content-404 {
     background: rgb(0, 0, 0);
 }
