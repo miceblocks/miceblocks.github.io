@@ -1,5 +1,12 @@
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
+    $scope.bemTeViPlay = bemTeViPlay;
+
+    function bemTeViPlay() {
+        var bemTeViSound = document.getElementById("myAudio");
+        bemTeViSound.play();
+    }
+
     $scope.downloadsList = [
         /*
         {
@@ -22,7 +29,7 @@ app.controller('myCtrl', function($scope) {
 
         {
             "version": "A.12.2",
-            "minecraft": "[1.13] ~ [1.16.4]",
+            "minecraft": "[1.13] ~ [1.16.5]",
             "link": "https://miceblocks.github.io/downloads/Mice%20Blocks%20vA.12.2.zip"
         },
     ]

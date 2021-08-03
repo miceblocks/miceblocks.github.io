@@ -2,18 +2,18 @@
 <html lang="en" ng-app="myApp" ng-controller="myCtrl">
 
     <head id="head">
-        <script data-ad-client="ca-pub-4052688585225352" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- <script data-ad-client="ca-pub-4052688585225352" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166798367-1"></script>
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166798367-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
             gtag('config', 'UA-166798367-1');
-        </script>
+        </script> -->
 
         <meta charset="UTF-8">
         <meta name="keywords" content="minecraft texture pack, minecraft, texture pack, resource pack, 16x16, 16x, simplistic, ocd, lite, disco">
@@ -37,11 +37,11 @@
         <link rel="stylesheet" href="css/custom.css">
 
         <!-- Bootstrap CSS Theme-->
-        <link rel="stylesheet" href="css/bootstrap/default/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap/vapor/bootstrap.min.css">
 
     </head>
 
-    <body>
+    <body style="background: rgb(0, 0, 0);">
 
     <!-- Loading screen -->
     <div class="se-pre-con">
@@ -51,47 +51,46 @@
     </div>
 
     <!-- ParticlesJS -->
-    <div id="particles-404-js"></div>
+    <div id="particles-404-js" style="z-index:-10;"></div>
 
-    <div class="main-content-404 container-fluid text-center text-white bottom-buffer">
+    <div class="container-fluid bottom-buffer">
+        <div class="row justify-content-center text-center">
 
-        <header>
-            <a href="/">
-                <img class="img-fluid mx-auto d-block miceblocks-logo-404" src="imgs/mice-text-1024x256.png" alt="Mice Blocks logo">
-            </a>
-            
-        </header>
-
-        <div class="row">
-            <div class="col-md-12">
-                <p class="text-muted"><strong>The End</strong></p>
+            <div class="col-12">
+                <header>
+                    <a href="/">
+                        <img class="img-fluid mx-auto d-block miceblocks-logo-404" src="imgs/mice-text-1024x256.png" alt="Mice Blocks logo">
+                    </a>
+                </header>
             </div>
-        </div>
 
-        <div class="row">
             <div class="col-md-12">
-                <h1 class="text-danger display-2"><strong>Error 404!</strong></h1>
+                <span class="text-muted"><b>The End</b></span>
             </div>
-        </div>
-        <div class="row">
+
+            <div class="col-md-12">
+                <h1 class="text-danger display-2"><b>Error 404!</b></h1>
+            </div>
+
             <div class="col-md-12">
                 <h2>Not the kind of thing we want you to see...</h2>
             </div>
-        </div>
-        <div class="row">
+
             <div class="col-md-12">
-                <a class="btn btn-dark btn-lg m-4" href="/"><strong>Convenient exit</strong></a>
+                <a class="btn btn-info btn-lg m-4 glow-on-hover" href="/"><b>Convenient exit</b></a>
             </div>
+
+
         </div>
     </div>
 
-        <div id="footer"></div>
+        <div id="footer" class="container-fluid bg-dark text-white text-center p-4"></div>
 
         <!-- Font awesome icons -->
         <script src="https://kit.fontawesome.com/833adfb60e.js" crossorigin="anonymous"></script>
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/bootstrap/jquery-3.5.1.min.js"></script>
+        <script src="js/bootstrap/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
 
         <!-- AngularJS -->
