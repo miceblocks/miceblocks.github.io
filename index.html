@@ -61,12 +61,6 @@
             data-position-y="top"
             data-speed="0.5">
 
-            <audio id="myAudio">
-                <source src="sounds/bem-te-vi.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            
-
             <div class="row justify-content-center">
                 <div class="col-12">
                     <!-- Header -->
@@ -76,15 +70,15 @@
                 </div>
                 <div class="col-md-4 col-sm-8">
 
-                    <div class="row m-4">
+                    <!-- <div class="row m-4">
                         <div class="col-12">
                             <button class="btn btn-dark shadow" data-toggle="tooltip" data-bs-placement="top" title="Last version of Mice Blocks">
                                 <b>{{ downloadsList[downloadsList.length-1].version }}</b>
                             </button>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-12">
                             <div class="d-grid gap-2">
                                 <a class="button-download btn btn-lg btn-success shadow glow-on-hover"
@@ -93,15 +87,36 @@
                                 </a>
                             </div>
                         </div>
+                    </div> -->
+
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <div class="card text-white bg-primary p-3 shadow">
+                                <div class="card-body">
+                                  <h5 class="card-title">Miceblocks now lives on a React based environment. Yay!</h5>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="row m-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-grid gap-2">
+                                <a class="button-download btn btn-lg btn-success shadow glow-on-hover"
+                                    ng-href="{{ downloadsList[downloadsList.length-1].link }}" >
+                                    <b>Go to the new Website</b>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row m-4">
                         <div class="col-12">
                             <button class="btn btn-dark shadow" data-toggle="tooltip" data-bs-placement="bottom" title="Supported Minecraft versions">
                                 <b>{{ downloadsList[downloadsList.length-1].minecraft }}</b>
                             </button>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
